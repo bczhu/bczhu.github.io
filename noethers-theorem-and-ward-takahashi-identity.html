@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="chinese (simplified)">
+  <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+    <title>Kane's Blog</title>
+
+    <meta charset="utf-8" />
+    <link href="/feeds/study.atom.xml" type="application/atom+xml" rel="alternate" title="Kane's Blog Categories Atom Feed" />
+    <link rel="stylesheet" href="/theme/css/poole.css"/>
+    <link rel="stylesheet" href="/theme/css/syntax.css"/>
+    <link rel="stylesheet" href="/theme/css/lanyon.css"/>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+    <link rel="stylesheet" href="/theme/css/styles.css"/>
+
+
+
+    <meta name="tags" contents="物理" />
+    <meta name="tags" contents="QFT" />
+
+  </head>
+
+  <body class="theme-base-08">
+<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <div class="profile">
+      <img src="/theme/img/profile.png"/>
+    </div>
+  </div>
+
+  <nav class="sidebar-nav">
+  <a class="sidebar-nav-item" href="/">All</a>
+
+      <a class="sidebar-nav-item" href="/category/life.html">Life</a>
+      <a class="sidebar-nav-item" href="/category/study.html">Study</a>
+
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+    <a href="https://twitter.com/">&copy; @</a> 2017
+    </p>
+    <p class="tiny-note">
+      <a class="muted" href="https://github.com/thomaswilley/pelicanyan">pelicanyan v0.1</a>
+    </p>
+  </div>
+</div>    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">Kane's Blog</a>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+<div class="posts">
+<div class="post">
+    <h1 class="post-title">
+      Noether's theorem and Ward-Takahashi identity
+    </h1>
+    <span class="post-date">周日 01 十一月 2015</span>
+
+    <p>In classical and quantum field theory, it is claimed that every continuous symmetry leads to a conservation law. But the derivation usually takes different form and quite confusing sometimes. Here, we deduce it in different scenarios and also in both classical field and quantum field theory.</p>
+<h2>1. In the passive point of view</h2>
+<p>This means the coordinates <span class="math">\(x\)</span> and <span class="math">\(x'\)</span> correspond to the same point but given by different frame, also the integral area <span class="math">\(\Omega\)</span> and <span class="math">\(\Omega'\)</span>.</p>
+<p><strong>Total derivative</strong>: here, we first clarify a very useful concept <em>total derivative</em>. For a general transformation: 
+</p>
+<div class="math">$$x_{\mu}\to x'_{\mu}=x_{\mu}+\delta x_{\mu}\\
+\phi_r(x)\to\phi_r'(x')=\phi_r(x)+\delta\phi_r(x)$$</div>
+<p>
+Then the <em>total derivative</em> defines by:
+</p>
+<div class="math">\begin{align}
+\tilde{\delta}\phi_r(x)&amp;\equiv\phi_r'(x)-\phi_r(x)=\phi_r'(x')-\phi_r(x)+\phi_r'(x)-\phi_r'(x')\\
+&amp;={\delta}\phi_r(x)-\delta x_{\mu}\partial^{\mu}\phi_r(x)
+\end{align}</div>
+<p>
+The <em>total derivative</em> has very good property:
+</p>
+<div class="math">$$\partial_{\mu}\tilde{\delta}\phi_r(x)=\tilde{\delta}\partial_{\mu}\phi_r(x)$$</div>
+<p>
+<strong>Notice</strong>: this <em>total derivative</em> is regardless of whether we are in <em>passive</em> or <em>active</em> viewpoint.
+Then:
+</p>
+<div class="math">$$\delta S=\int_{\Omega'}d^4x'\mathcal{L}'(x')-\int_{\Omega}d^4x\mathcal{L}(x)$$</div>
+<p>
+where <span class="math">\(\mathcal{L}'(x')\equiv \mathcal{L}(\phi'(x'),\partial'_{\mu}\phi'(x'),x')\)</span>.
+From <span class="math">\(\mathcal{L}'(x')=\mathcal{L}(x)+\delta\mathcal{L}(x)\)</span>, which gives
+</p>
+<div class="math">$$\delta S=\int_{\Omega'}d^4x'\delta\mathcal{L}(x)+\int_{\Omega'}d^4x'\mathcal{L}(x)-\int_{\Omega}d^4x\mathcal{L}(x)$$</div>
+<p>
+From <span class="math">\(d^4x'=(1+\partial_{\mu}\delta x^{\mu})d^4x\)</span>, we have
+</p>
+<div class="math">$$\int_{\Omega'}d^4x'\delta\mathcal{L}(x)\approx \int_{\Omega}d^4x\delta\mathcal{L}(x)$$</div>
+<p>
+Because <span class="math">\(\Omega'\)</span> is just the same as <span class="math">\(\Omega\)</span> and we omit the second and high order <span class="math">\(\delta\)</span>. Also:
+</p>
+<div class="math">$$\int_{\Omega'}d^4x'\mathcal{L}(x)-\int_{\Omega}d^4x\mathcal{L}(x)\\
+=\int_{\Omega}d^4x\partial_{\mu}\delta x^{\mu}\mathcal{L}(x)$$</div>
+<p>
+Then we have
+</p>
+<div class="math">$$\delta S=\int_{\Omega}d^4x\delta\mathcal{L}(x)+\int_{\Omega}d^4x\partial_{\mu}\delta x^{\mu}\mathcal{L}(x)\\
+=\int_{\Omega}d^4x\left(\tilde{\delta}\mathcal{L}(x)+\partial_{\mu}\mathcal{L}(x)\delta x^{\mu}\right)+\int_{\Omega}d^4x\partial_{\mu}\delta x^{\mu}\mathcal{L}(x)\\
+=\int_{\Omega}d^4x\left(\tilde{\delta}\mathcal{L}(x)+\partial_{\mu}(\delta x^{\mu}\mathcal{L}(x))\right)$$</div>
+<p>
+Then we can get
+</p>
+<div class="math">$$\tilde{\delta}\mathcal{L}(x)=\partial^{\mu}\left[\frac{\partial\mathcal{L}(x)}{\partial(\partial^{\mu}\phi_r)}\tilde{\delta}\phi_r(x)\right],$$</div>
+<p>
+where <em>Euler-Lagrangian formula</em> has been used.
+Define:
+</p>
+<div class="math">\begin{align}
+j_{\mu}(x)=&amp;\frac{\partial\mathcal{L}(x)}{\partial(\partial^{\mu}\phi_r)}\tilde{\delta}\phi_r(x)+\mathcal{L}(x)\delta x_{\mu}\\
+=&amp;\frac{\partial\mathcal{L}(x)}{\partial(\partial^{\mu}\phi_r)}{\delta}\phi_r(x)-\left(\frac{\partial\mathcal{L}(x)}{\partial(\partial^{\mu}\phi_r)}\partial_{\nu}\phi_r(x)-g_{\mu\nu}\mathcal{L}(x)\right)\delta x^{\nu},
+\end{align}</div>
+<p>
+we get
+</p>
+<div class="math">$$\partial^{\mu}j_{\mu}(x)=0$$</div>
+<p>
+Which is the <em>Noether's theorem</em>.</p>
+<h2>2. In the active point of view</h2>
+<p>What we want to do is to calculate the variantion 
+</p>
+<div class="math">$$\delta S=\int_{\Omega'}d^4x'\mathcal{L}(\phi_r'(x'),\partial_{\mu}'\phi_r'(x'))-\int_{\Omega}d^4x\mathcal{L}(\phi_r(x),\partial_{\mu}\phi_r(x))$$</div>
+<p>
+Since <span class="math">\(x'\)</span> is a dumb variant, we can recall it as <span class="math">\(x\)</span>, then
+</p>
+<div class="math">\begin{align}
+\delta S=&amp;\int_{\Omega'}d^4x\mathcal{L}(\phi_r'(x),\partial_{\mu}'\phi_r'(x))-\int_{\Omega}d^4x\mathcal{L}(\phi_r(x),\partial_{\mu}\phi_r(x))\\
+=&amp;\int_{\Omega}\tilde{\delta}\mathcal{L}(x)+\int_{\Omega'-\Omega}d^4x\mathcal{L}(\phi_r'(x),\partial_{\mu}'\phi_r'(x))\\
+=&amp;\int_{\Omega}\tilde{\delta}\mathcal{L}(x)+\int_{\partial\Omega}dS_{\lambda}\delta x^{\lambda}\mathcal{L}(\phi_r(x),\partial_{\mu}\phi_r(x))\\
+=&amp;\int_{\Omega}\partial_{\mu}(\frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\phi_r)}\tilde{\delta}\phi_r)+\int_{\Omega}dx^4\partial_{\lambda}(\delta x^{\lambda}\mathcal{L}(\phi_r(x),\partial_{\mu}\phi_r(x)))\\
+=&amp;\int_{\Omega}\partial_{\mu}(\frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\phi_r)}\tilde{\delta}\phi_r+\delta x^{\mu}\mathcal{L})
+\end{align}</div>
+<p>
+Where <span class="math">\(\tilde{\delta}\phi_r=\delta\phi_r-\partial_{\mu}\phi_r\delta x^{\mu}\)</span>.</p>
+<h2>3. Simpler one (akin to active point of view)</h2>
+<p>The coordinate is unchanged, but the field is changed to <span class="math">\(\phi(x')\)</span> for scalar field and <span class="math">\({T(\Lambda)^{-1}}_r^s\phi_s(x')\)</span> for vector field.
+</p>
+<div class="math">$$\delta\mathcal{L}=\partial_{\mu}(\frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\phi_r)}\delta\phi_r)=\mathcal{L}(x')-\mathcal{L}(x)$$</div>
+<p>
+For translation symmetry, <span class="math">\(x'=x+\epsilon\)</span>, <span class="math">\(\delta\phi_r=\phi_r(x')-\phi_r(x)=\epsilon^{\mu}\partial_{\mu}\phi_r\)</span>, which gives
+</p>
+<div class="math">$$\partial_{\mu}(\frac{\partial\mathcal{L}}{\partial(\partial^{\mu}\phi_r)}\partial_{\nu}\phi_r-g_{\mu\nu}\mathcal{L})=0$$</div>
+<p>
+For Lorentz transformation, we have <span class="math">\(x'=x+\delta\omega^{\mu}{}_{\nu}x^{\nu}\)</span>, </p>
+<div class="math">$$\delta\phi_r=T(\Lambda)^{-1}{}_r{}^s\phi_s(x')-\phi(x)=\delta\omega_{\mu\nu}(x^{\nu}\partial^{\mu}\phi_r+\frac{i}{2}(J^{\mu\nu})_r{}^s\phi_s)$$</div>
+<p>
+where <span class="math">\(T(\Lambda){}_r{}^s=\delta_r{}^s-\frac{i}{2}\delta_{\mu\nu}(J^{\mu\nu})_r{}^s\)</span>
+we get
+</p>
+<div class="math">$$\partial^{\mu}f_{\mu}=0$$</div>
+<p>
+with
+</p>
+<div class="math">$$f_{\mu}=\frac{1}{2}\delta\omega^{\nu\lambda}M_{\mu\nu\lambda}$$</div>
+<div class="math">$$M_{\mu\nu\lambda}=\Theta_{\mu\lambda}x_{\nu}-\Theta_{\mu\nu}x_{\lambda}+i\frac{\partial\mathcal{L}}{\partial(\partial^{\mu}\phi_r)}(J_{\nu\lambda})_r{}^s\phi_s$$</div>
+<p>
+where
+</p>
+<div class="math">$$\Theta_{\mu\nu}=\frac{\partial\mathcal{L}}{\partial(\partial^{\mu}\phi_r)}\partial_{\nu}\phi_r-g_{\mu\nu}\mathcal{L}$$</div>
+<p>
+<strong>Or another way around</strong>: <span class="math">\(\phi(x)\to T(\Lambda)\phi(\Lambda^{-1}x)\)</span></p>
+<h2>4. General argument</h2>
+<h2>5. Ward-Takahashi identity</h2>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
+  </div>
+</div>
+      </div>
+
+      <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+      <script>
+        (function(document) {
+          var i = 0;
+          // snip empty header rows since markdown can't
+          var rows = document.querySelectorAll('tr');
+          for(i=0; i<rows.length; i++) {
+            var ths = rows[i].querySelectorAll('th');
+            var rowlen = rows[i].children.length;
+            if (ths.length > 0 && ths.length === rowlen) {
+              rows[i].remove();
+            }
+          }
+        })(document);
+      </script>
+
+      <script>
+        /* Lanyon & Poole are Copyright (c) 2014 Mark Otto. Adapted to Pelican 20141223 and extended a bit by @thomaswilley */
+        (function(document) {
+          var toggle = document.querySelector('.sidebar-toggle');
+          var sidebar = document.querySelector('#sidebar');
+          var checkbox = document.querySelector('#sidebar-checkbox');
+          document.addEventListener('click', function(e) {
+            var target = e.target;
+            if(!checkbox.checked ||
+            sidebar.contains(target) ||
+            (target === checkbox || target === toggle)) return;
+            checkbox.checked = false;
+            }, false);
+            })(document);
+      </script>
+     </div>
+  </body>
+</html>

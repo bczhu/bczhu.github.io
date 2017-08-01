@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="chinese (simplified)">
+  <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+    <title>Kane's Blog</title>
+
+    <meta charset="utf-8" />
+    <link href="/feeds/study.atom.xml" type="application/atom+xml" rel="alternate" title="Kane's Blog Categories Atom Feed" />
+    <link rel="stylesheet" href="/theme/css/poole.css"/>
+    <link rel="stylesheet" href="/theme/css/syntax.css"/>
+    <link rel="stylesheet" href="/theme/css/lanyon.css"/>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+    <link rel="stylesheet" href="/theme/css/styles.css"/>
+
+
+
+    <meta name="tags" contents="编程相关" />
+
+  </head>
+
+  <body class="theme-base-08">
+<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <div class="profile">
+      <img src="/theme/img/profile.png"/>
+    </div>
+  </div>
+
+  <nav class="sidebar-nav">
+  <a class="sidebar-nav-item" href="/">All</a>
+
+      <a class="sidebar-nav-item" href="/category/life.html">Life</a>
+      <a class="sidebar-nav-item" href="/category/study.html">Study</a>
+
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+    <a href="https://twitter.com/">&copy; @</a> 2017
+    </p>
+    <p class="tiny-note">
+      <a class="muted" href="https://github.com/thomaswilley/pelicanyan">pelicanyan v0.1</a>
+    </p>
+  </div>
+</div>    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">Kane's Blog</a>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+<div class="posts">
+<div class="post">
+    <h1 class="post-title">
+      sublime+markdown 配置
+    </h1>
+    <span class="post-date">周三 18 五月 2016</span>
+
+    <ol>
+<li>安装package control :https://packagecontrol.io/installation</li>
+<li><code>Ctrl+Shift+P</code> 选择Package control :install package, 输入MarkdownEditing，Markdown Preview。</li>
+<li>中文字体支持：安装package: <em>ConvertToUTF8</em>和<em>GBK Encoding Support</em>.</li>
+<li>安装风格：<strong>Monokai Extended</strong>
+设置：Preferences -&gt; Color Scheme -&gt; User -&gt; Monokai Extended</li>
+<li>Markdown preview设置：</li>
+</ol>
+<div class="highlight"><pre><span></span><span class="cm">/* Sets the parser used for building markdown to HTML. */</span><span class="w"> </span>
+<span class="s">&quot;parser&quot;</span><span class="err">:</span><span class="w"> </span><span class="s">&quot;markdown&quot;</span><span class="o">,</span><span class="w"> </span>
+<span class="cm">/* Enable or not mathjax support. */</span><span class="w"> </span>
+<span class="s">&quot;enable_mathjax&quot;</span><span class="err">:</span><span class="w"> </span>true<span class="o">,</span><span class="w"> </span>
+<span class="s">&quot;enable_highlight&quot;</span><span class="err">:</span><span class="w"> </span>true<span class="o">,</span><span class="w"> </span>
+<span class="cm">/* Remove github */</span><span class="w"> </span>
+<span class="s">&quot;enabled_parsers&quot;</span><span class="err">:</span><span class="w"> </span><span class="err">[</span><span class="s">&quot;markdown&quot;</span><span class="err">]</span><span class="w"></span>
+<span class="err">}</span><span class="w"></span>
+</pre></div>
+
+
+<ol>
+<li>浏览器预览（<strong>没成功</strong>）：Key-Bindings设置：
+<code>{"keys": ["alt+m"], "command": "markdown_preview", "args": {"target": "browser", "parser":"markdown"}}</code></li>
+</ol>
+  </div>
+</div>
+      </div>
+
+      <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+      <script>
+        (function(document) {
+          var i = 0;
+          // snip empty header rows since markdown can't
+          var rows = document.querySelectorAll('tr');
+          for(i=0; i<rows.length; i++) {
+            var ths = rows[i].querySelectorAll('th');
+            var rowlen = rows[i].children.length;
+            if (ths.length > 0 && ths.length === rowlen) {
+              rows[i].remove();
+            }
+          }
+        })(document);
+      </script>
+
+      <script>
+        /* Lanyon & Poole are Copyright (c) 2014 Mark Otto. Adapted to Pelican 20141223 and extended a bit by @thomaswilley */
+        (function(document) {
+          var toggle = document.querySelector('.sidebar-toggle');
+          var sidebar = document.querySelector('#sidebar');
+          var checkbox = document.querySelector('#sidebar-checkbox');
+          document.addEventListener('click', function(e) {
+            var target = e.target;
+            if(!checkbox.checked ||
+            sidebar.contains(target) ||
+            (target === checkbox || target === toggle)) return;
+            checkbox.checked = false;
+            }, false);
+            })(document);
+      </script>
+     </div>
+  </body>
+</html>

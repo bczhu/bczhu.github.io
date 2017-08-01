@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Kane's Blog - Kane</title><link>/</link><description></description><lastBuildDate>Tue, 01 Aug 2017 00:00:00 +0800</lastBuildDate><item><title>Welcome to Leanote! 欢迎来到Leanote!</title><link>/welcome-to-leanote-huan-ying-lai-dao-leanote.html</link><description>&lt;h2&gt;1. 排版&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;粗体&lt;/strong&gt; &lt;em&gt;斜体&lt;/em&gt; &lt;/p&gt;
+&lt;p&gt;~~这是一段错误的文本。~~&lt;/p&gt;
+&lt;p&gt;引用:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;引用Leanote官方的话, 为什么要做Leanote, 原因是...&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;有充列表:
+ 1. 支持Vim
+ 2. 支持Emacs&lt;/p&gt;
+&lt;p&gt;无序列表:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;项目1&lt;/li&gt;
+&lt;li&gt;项目2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;2. 图片与链接&lt;/h2&gt;
+&lt;p&gt;图片:
+&lt;img alt="leanote" src="http://leanote.com/images/logo/leanote_icon_blue.png"&gt;
+链接:&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://leanote.leanote.com"&gt;这是去往Leanote官方博客的链接&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;3. 标题&lt;/h2&gt;
+&lt;p&gt;以下是各级标题, 最多支持5级标题&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# h1
+## h2
+### h3
+#### h4
+##### h4
+###### h5
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;4. 代码&lt;/h2&gt;
+&lt;p&gt;示例:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;function get(key) {
+    return m[key];
+}
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;代码高亮示例:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cm"&gt;/**&lt;/span&gt;
+&lt;span class="cm"&gt;* nth element in the fibonacci series.&lt;/span&gt;
+&lt;span class="cm"&gt;* @param n …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kane</dc:creator><pubDate>Tue, 01 Aug 2017 00:00:00 +0800</pubDate><guid isPermaLink="false">tag:None,2017-08-01:/welcome-to-leanote-huan-ying-lai-dao-leanote.html</guid><category>Leanote</category></item><item><title>量化相关资料</title><link>/liang-hua-xiang-guan-zi-liao.html</link><description>&lt;h2&gt;Online books&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="https://www.otexts.org/fpp"&gt;Forecasting: principles and practice&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Website&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="http://robjhyndman.com/hyndsight/"&gt;HYNDSIGHT&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kane</dc:creator><pubDate>Sun, 18 Sep 2016 00:00:00 +0800</pubDate><guid isPermaLink="false">tag:None,2016-09-18:/liang-hua-xiang-guan-zi-liao.html</guid><category>学习</category></item><item><title>sublime+markdown 配置</title><link>/sublimemarkdown-pei-zhi.html</link><description>&lt;ol&gt;
+&lt;li&gt;安装package control :https://packagecontrol.io/installation&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl+Shift+P&lt;/code&gt; 选择Package control :install package, 输入MarkdownEditing，Markdown Preview。&lt;/li&gt;
+&lt;li&gt;中文字体支持：安装package: &lt;em&gt;ConvertToUTF8&lt;/em&gt;和&lt;em&gt;GBK Encoding Support&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;安装风格：&lt;strong&gt;Monokai Extended&lt;/strong&gt;
+设置：Preferences -&amp;gt; Color Scheme -&amp;gt; User -&amp;gt; Monokai Extended&lt;/li&gt;
+&lt;li&gt;Markdown preview设置：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cm"&gt;/* Sets the parser used for building markdown to HTML. */&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;
+&lt;span class="s"&gt;&amp;quot;parser&amp;quot;&lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;markdown&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;
+&lt;span class="cm"&gt;/* Enable or not mathjax …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kane</dc:creator><pubDate>Wed, 18 May 2016 00:00:00 +0800</pubDate><guid isPermaLink="false">tag:None,2016-05-18:/sublimemarkdown-pei-zhi.html</guid><category>编程相关</category></item><item><title>机器学习相关资料</title><link>/ji-qi-xue-xi-xiang-guan-zi-liao.html</link><description>&lt;h2&gt;课程&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="http://blog.coursegraph.com/%E5%85%AC%E5%BC%80%E8%AF%BE%E5%8F%AF%E4%B8%8B%E8%BD%BD%E8%B5%84%E6%BA%90%E6%B1%87%E6%80%BB"&gt;公开课资源&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Stanford公开课：&lt;a href="http://web.stanford.edu/class/cs246/handouts.html"&gt;Mining Massive Data Sets&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Berkeley cs: &lt;a href="http://www.cs.berkeley.edu/~jordan/courses/260-spring10/"&gt;Bayesian Modeling and Inference&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Stanford &lt;a href="http://cs231n.stanford.edu/"&gt;CS231n: Convolutional Neural Networks for Visual Recognition&lt;/a&gt;,&lt;a href="http://cs231n.github.io/"&gt;Notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;课程：&lt;a href="http://www.cs.toronto.edu/~rgrosse/csc321/calendar.html"&gt;Introduction to Neural Networks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.cs.haifa.ac.il/~rita/uml_course/course_contents.html"&gt;Unsupervised Learning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://varianceexplained.org/RData/"&gt;Rdata&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;网站&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;网站：&lt;a href="https://www.52ml.net/"&gt;我爱机器学习&lt;/a&gt;，&lt;a href="http://www.52nlp.cn/"&gt;我爱自然语言处理&lt;/a&gt;,&lt;a href="http://www.52cs.org/"&gt;我爱计算机&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://playground.tensorflow.org/"&gt;Tensorflow playground&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;基于遗传算法设计NN的&lt;a href="http://www.otoro.net/ml/neat-playground"&gt;demo&lt;/a&gt;,而且可以有不同的activation functions,更多内容见: &lt;a href="http://www.otoro.net/ml/"&gt;http://www.otoro.net/ml/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://deeplearning.net/"&gt;Deep learning&lt;/a&gt;, &lt;a href="http://deeplearning.net/tutorial/contents.html"&gt;tutorials …&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kane</dc:creator><pubDate>Sun, 15 May 2016 00:00:00 +0800</pubDate><guid isPermaLink="false">tag:None,2016-05-15:/ji-qi-xue-xi-xiang-guan-zi-liao.html</guid><category>机器学习</category><category>人工智能</category></item><item><title>Lie derivatives and Covariant derivatives</title><link>/lie-derivatives-and-covariant-derivatives.html</link><description>&lt;p&gt;In differential geometry, two concepts are always quite difficult to distinguish, one is the &lt;em&gt;Lie derivatives&lt;/em&gt;, the other is &lt;em&gt;Covariant derivatives&lt;/em&gt;. In order to distinguish them, first, we give the definition of them.&lt;/p&gt;
+&lt;p&gt;All &lt;em&gt;derivatives&lt;/em&gt; want to characterize the aspects of different manifolds, and to compare the quantities between different …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kane</dc:creator><pubDate>Tue, 10 Nov 2015 00:00:00 +0800</pubDate><guid isPermaLink="false">tag:None,2015-11-10:/lie-derivatives-and-covariant-derivatives.html</guid><category>数学</category></item><item><title>Noether's theorem and Ward-Takahashi identity</title><link>/noethers-theorem-and-ward-takahashi-identity.html</link><description>&lt;p&gt;In classical and quantum field theory, it is claimed that every continuous symmetry leads to a conservation law. But the derivation usually takes different form and quite confusing sometimes. Here, we deduce it in different scenarios and also in both classical field and quantum field theory.&lt;/p&gt;
+&lt;h2&gt;1. In the passive …&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kane</dc:creator><pubDate>Sun, 01 Nov 2015 00:00:00 +0800</pubDate><guid isPermaLink="false">tag:None,2015-11-01:/noethers-theorem-and-ward-takahashi-identity.html</guid><category>物理</category><category>QFT</category></item><item><title>《Intuition Pumps》读书笔记 Chapter 58</title><link>/intuition-pumps-du-shu-bi-ji-chapter-58.html</link><description>&lt;p&gt;这一节主要讲到qualia的含义的不明确性。文中先讲到了两个很有意思的认知神经病例：prosopagnosia 和 Capgras delusion.&lt;/p&gt;
+&lt;p&gt;Prosopagnosia 指脸部失认症，患这种病症的病人的视觉系统正常，但却无法识别人脸。他们能够区分男女老幼，亚洲人或欧洲人，但是却无法区分性别相同年龄相仿的朋友们的脸。而更有意思的是，尽管认知层面他们无法识别人脸，但实际上，在某种意义上，他们却又可以识别人脸，甚至他们自己都没有意识到。当展示他们一张熟人照片，并要求从听到的几个候选名字中选出认为匹配的名字的时候，他们是随机选择的，但是，他们的皮肤电信号响应（galvanic skin response）（用于测量情绪起伏的）却特别强烈，当他们听到正确名字的时候。&lt;/p&gt;
+&lt;p&gt;所以，在一个非常简化的模型中，可以认为大脑中有两套相互独立的人脸识别系统。在我们的例子中，受伤的意识系统，认为是高层次的位于视觉皮层的系统，无法帮助受试者识别人脸。但没有受伤的非意识系统，可认为是低层次的边缘系统，却会对人脸识别做出响应。&lt;/p&gt;
+&lt;p&gt;与患者脸部失认症的病人相反，患有Capgras delusion的病人，会突然相信自己的爱人或亲人，是被秘密调换的冒名顶替的复制品。他们并没有精神病，只是像被植入了一个信念，使他们相信他们的爱人是假的。他们能够识别爱人的脸，所以意识系统没问题 …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kane</dc:creator><pubDate>Mon, 03 Nov 2014 00:00:00 +0800</pubDate><guid isPermaLink="false">tag:None,2014-11-03:/intuition-pumps-du-shu-bi-ji-chapter-58.html</guid><category>读书笔记</category><category>脑神经科学</category></item><item><title>MIU</title><link>/miu.html</link><description>&lt;p&gt;去了厦大一个礼拜，昨晚归来，但那种浓烈的化不开的忧郁并没有丝毫减除。休息或逃离，改变不了任何事，能让人暂时忘了烦恼，但永不是救赎。所以，即使是在厦大的一周，依旧没心情可言，而在归来之后，也只是陷入更深的泥淖。&lt;/p&gt;
+&lt;p&gt;前天晚上和昨天，分别看了一个纪录片，《56 up》和《浮生一日》，都是关于生活本身的好片子。理想与现实，宿命与抗争，爱与孤独，以及那无边的虚无和对意义存在感的探寻，无不指向生命的核心，但又不见归途。&lt;/p&gt;
+&lt;p&gt;我又何尝不是深陷其中，被无形的牢笼封得严严实实，没有勇气和力量去突围。以前物理就是我的信仰，但现在不是了，现在没了信仰，失去了目标和方向，飘渺不定。开始羡慕起那些信徒，可以坚定的诚心做一件事情，找到心之所依。&lt;/p&gt;
+&lt;p&gt;人真的有可能抓住自己的头发把自己提起来吗？在过去的很长一段时间，一直求改变，但与两年前相比，情况却几无变化，甚至更糟，无以名状的焦虑感越来越重。如此，两年后，是否依旧？这里面是有多大的宿命呢？&lt;/p&gt;
+&lt;p&gt;爱是什么？我没有能力去爱人，也不爱自己 …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kane</dc:creator><pubDate>Tue, 01 Apr 2014 00:00:00 +0800</pubDate><guid isPermaLink="false">tag:None,2014-04-01:/miu.html</guid><category>生活</category><category>成长</category></item><item><title>The God, grace and serendipity</title><link>/the-god-grace-and-serendipity.html</link><description>&lt;p&gt;&lt;img alt="" src="/images/grace.jpg" title="grace"&gt;&lt;/p&gt;
+&lt;p&gt;我并不是个坚定的无神论者（atheist），最多只能算得上是个不可知论者（agnostic），宇宙的惊奇之处常常会出乎我们的预料。例如，作为有自由意志的人类本身的存在，就足以是个奇迹。而更神奇的，还有万物运行的规律的可理解性，这正是爱因斯坦所说过的：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“The most incomprehensible thing about the world is that it is at all comprehensible."&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;有时候，我们会把它看成是：the God。不过，God这个词，只是一个称呼，没必要深究其具体含义了。&lt;/p&gt;
+&lt;p&gt;这让我想到了霍金在新书《大设计》里面的信念，那就是，宇宙并没有一个设计者，或者说，不存在第一推动难题，我们的宇宙没有给上帝的存在保留位置。但是从另一个方面，想起曾经人们为CERN的LHC项目的担忧，害怕它的运行会产生微型黑洞，进而吞噬地球。那么是否有可能，我们的宇宙也只不过是某个高级文明实验室里的产物呢？我们身处宇宙之内，无法知晓宇宙是否有之外之说，或者是得到宇宙之外的信息 …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kane</dc:creator><pubDate>Thu, 25 Jul 2013 00:00:00 +0800</pubDate><guid isPermaLink="false">tag:None,2013-07-25:/the-god-grace-and-serendipity.html</guid><category>杂谈</category><category>生活</category><category>心理学</category></item></channel></rss>

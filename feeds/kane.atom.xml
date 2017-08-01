@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Kane's Blog - Kane</title><link href="/" rel="alternate"></link><link href="/feeds/kane.atom.xml" rel="self"></link><id>/</id><updated>2017-08-01T00:00:00+08:00</updated><entry><title>Welcome to Leanote! 欢迎来到Leanote!</title><link href="/welcome-to-leanote-huan-ying-lai-dao-leanote.html" rel="alternate"></link><published>2017-08-01T00:00:00+08:00</published><updated>2017-08-01T00:00:00+08:00</updated><author><name>Kane</name></author><id>tag:None,2017-08-01:/welcome-to-leanote-huan-ying-lai-dao-leanote.html</id><summary type="html">&lt;h2&gt;1. 排版&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;粗体&lt;/strong&gt; &lt;em&gt;斜体&lt;/em&gt; &lt;/p&gt;
+&lt;p&gt;~~这是一段错误的文本。~~&lt;/p&gt;
+&lt;p&gt;引用:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;引用Leanote官方的话, 为什么要做Leanote, 原因是...&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;有充列表:
+ 1. 支持Vim
+ 2. 支持Emacs&lt;/p&gt;
+&lt;p&gt;无序列表:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;项目1&lt;/li&gt;
+&lt;li&gt;项目2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;2. 图片与链接&lt;/h2&gt;
+&lt;p&gt;图片:
+&lt;img alt="leanote" src="http://leanote.com/images/logo/leanote_icon_blue.png"&gt;
+链接:&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://leanote.leanote.com"&gt;这是去往Leanote官方博客的链接&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;3. 标题&lt;/h2&gt;
+&lt;p&gt;以下是各级标题, 最多支持5级标题&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# h1
+## h2
+### h3
+#### h4
+##### h4
+###### h5
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;4. 代码&lt;/h2&gt;
+&lt;p&gt;示例:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;function get(key) {
+    return m[key];
+}
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;代码高亮示例:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cm"&gt;/**&lt;/span&gt;
+&lt;span class="cm"&gt;* nth element in the fibonacci series.&lt;/span&gt;
+&lt;span class="cm"&gt;* @param n …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h2&gt;1. 排版&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;粗体&lt;/strong&gt; &lt;em&gt;斜体&lt;/em&gt; &lt;/p&gt;
+&lt;p&gt;~~这是一段错误的文本。~~&lt;/p&gt;
+&lt;p&gt;引用:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;引用Leanote官方的话, 为什么要做Leanote, 原因是...&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;有充列表:
+ 1. 支持Vim
+ 2. 支持Emacs&lt;/p&gt;
+&lt;p&gt;无序列表:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;项目1&lt;/li&gt;
+&lt;li&gt;项目2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;2. 图片与链接&lt;/h2&gt;
+&lt;p&gt;图片:
+&lt;img alt="leanote" src="http://leanote.com/images/logo/leanote_icon_blue.png"&gt;
+链接:&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://leanote.leanote.com"&gt;这是去往Leanote官方博客的链接&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;3. 标题&lt;/h2&gt;
+&lt;p&gt;以下是各级标题, 最多支持5级标题&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# h1
+## h2
+### h3
+#### h4
+##### h4
+###### h5
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;4. 代码&lt;/h2&gt;
+&lt;p&gt;示例:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;function get(key) {
+    return m[key];
+}
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;代码高亮示例:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cm"&gt;/**&lt;/span&gt;
+&lt;span class="cm"&gt;* nth element in the fibonacci series.&lt;/span&gt;
+&lt;span class="cm"&gt;* @param n &amp;gt;= 0&lt;/span&gt;
+&lt;span class="cm"&gt;* @return the nth element, &amp;gt;= 0.&lt;/span&gt;
+&lt;span class="cm"&gt;*/&lt;/span&gt;
+&lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="nx"&gt;fib&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;n&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;a&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;b&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;tmp&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="nx"&gt;n&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="nx"&gt;tmp&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;a&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="nx"&gt;a&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="nx"&gt;b&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="nx"&gt;b&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;tmp&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;
+  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nx"&gt;a&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;write&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;fib&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;));&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Employee&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+   &lt;span class="n"&gt;empCount&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
+
+   &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;__init__&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;salary&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+        &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;name&lt;/span&gt;
+        &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;salary&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;salary&lt;/span&gt;
+        &lt;span class="n"&gt;Employee&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;empCount&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;5. Markdown 扩展&lt;/h1&gt;
+&lt;p&gt;Markdown 扩展支持:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;表格&lt;/li&gt;
+&lt;li&gt;定义型列表&lt;/li&gt;
+&lt;li&gt;Html 标签&lt;/li&gt;
+&lt;li&gt;脚注&lt;/li&gt;
+&lt;li&gt;目录&lt;/li&gt;
+&lt;li&gt;时序图与流程图&lt;/li&gt;
+&lt;li&gt;MathJax 公式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;5.1 表格&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Item&lt;/th&gt;
+&lt;th&gt;Value&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Computer&lt;/td&gt;
+&lt;td&gt;\$1600&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Phone&lt;/td&gt;
+&lt;td&gt;\$12&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Pipe&lt;/td&gt;
+&lt;td&gt;\$1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;可以指定对齐方式, 如Item列左对齐, Value列右对齐, Qty列居中对齐&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align="left"&gt;Item&lt;/th&gt;
+&lt;th align="right"&gt;Value&lt;/th&gt;
+&lt;th align="center"&gt;Qty&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;Computer&lt;/td&gt;
+&lt;td align="right"&gt;\$1600&lt;/td&gt;
+&lt;td align="center"&gt;5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;Phone&lt;/td&gt;
+&lt;td align="right"&gt;\$12&lt;/td&gt;
+&lt;td align="center"&gt;12&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="left"&gt;Pipe&lt;/td&gt;
+&lt;td align="right"&gt;\$1&lt;/td&gt;
+&lt;td align="center"&gt;234&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;5.2 定义型列表&lt;/h2&gt;
+&lt;dl&gt;
+&lt;dt&gt;名词 1&lt;/dt&gt;
+&lt;dd&gt;定义 1（左侧有一个可见的冒号和四个不可见的空格）&lt;/dd&gt;
+&lt;dt&gt;代码块 2&lt;/dt&gt;
+&lt;dd&gt;这是代码块的定义（左侧有一个可见的冒号和四个不可见的空格）&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;代码块（左侧有八个不可见的空格）
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;h2&gt;5.3 Html 标签&lt;/h2&gt;
+&lt;p&gt;支持在 Markdown 语法中嵌套 Html 标签，譬如，你可以用 Html 写一个纵跨两行的表格：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;&amp;lt;table&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;tr&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;th&lt;/span&gt; &lt;span class="na"&gt;rowspan=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;2&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;值班人员&lt;span class="nt"&gt;&amp;lt;/th&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;th&amp;gt;&lt;/span&gt;星期一&lt;span class="nt"&gt;&amp;lt;/th&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;th&amp;gt;&lt;/span&gt;星期二&lt;span class="nt"&gt;&amp;lt;/th&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;th&amp;gt;&lt;/span&gt;星期三&lt;span class="nt"&gt;&amp;lt;/th&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/tr&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;tr&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;td&amp;gt;&lt;/span&gt;李强&lt;span class="nt"&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;td&amp;gt;&lt;/span&gt;张明&lt;span class="nt"&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;td&amp;gt;&lt;/span&gt;王平&lt;span class="nt"&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/tr&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/table&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th rowspan="2"&gt;值班人员&lt;/th&gt;
+        &lt;th&gt;星期一&lt;/th&gt;
+        &lt;th&gt;星期二&lt;/th&gt;
+        &lt;th&gt;星期三&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;李强&lt;/td&gt;
+        &lt;td&gt;张明&lt;/td&gt;
+        &lt;td&gt;王平&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;strong&gt;提示&lt;/strong&gt;, 如果想对图片的宽度和高度进行控制, 你也可以通过img标签, 如:&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://leanote.com/images/logo/leanote_icon_blue.png" width="50px" /&gt;&lt;/p&gt;
+&lt;h2&gt;5.4 脚注&lt;/h2&gt;
+&lt;p&gt;Leanote&lt;sup id="fnref-footnote"&gt;&lt;a class="footnote-ref" href="#fn-footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;来创建一个脚注&lt;/p&gt;
+&lt;h2&gt;5.5 目录&lt;/h2&gt;
+&lt;p&gt;通过 &lt;code&gt;[TOC]&lt;/code&gt; 在文档中插入目录, 如:&lt;/p&gt;
+&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;h2&gt;5.6 时序图与流程图&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Alice-&amp;gt;Bob: Hello Bob, how are you?
+Note right of Bob: Bob thinks
+Bob--&amp;gt;Alice: I am good thanks!
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;流程图:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;st=&amp;gt;start: Start
+e=&amp;gt;end
+op=&amp;gt;operation: My Operation
+cond=&amp;gt;condition: Yes or No?
+
+st-&amp;gt;op-&amp;gt;cond
+cond(yes)-&amp;gt;e
+cond(no)-&amp;gt;op
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;提示:&lt;/strong&gt; 更多关于时序图与流程图的语法请参考:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://bramp.github.io/js-sequence-diagrams/"&gt;时序图语法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://adrai.github.io/flowchart.js"&gt;流程图语法&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;5.7 MathJax 公式&lt;/h2&gt;
+&lt;p&gt;$ 表示行内公式： &lt;/p&gt;
+&lt;p&gt;质能守恒方程可以用一个很简洁的方程式 &lt;span class="math"&gt;\(E=mc^2\)&lt;/span&gt; 来表达。&lt;/p&gt;
+&lt;p&gt;$$ 表示整行公式：&lt;/p&gt;
+&lt;div class="math"&gt;$$\sum_{i=1}^n a_i=0$$&lt;/div&gt;
+&lt;div class="math"&gt;$$f(x_1,x_x,\ldots,x_n) = x_1^2 + x_2^2 + \cdots + x_n^2 $$&lt;/div&gt;
+&lt;div class="math"&gt;$$\sum^{j-1}_{k=0}{\widehat{\gamma}_{kj} z_k}$$&lt;/div&gt;
+&lt;p&gt;更复杂的公式:
+&lt;/p&gt;
+&lt;div class="math"&gt;$$
+\begin{eqnarray}
+\vec\nabla \times (\vec\nabla f) &amp;amp; = &amp;amp; 0  \cdots\cdots梯度场必是无旋场\\
+\vec\nabla \cdot(\vec\nabla \times \vec F) &amp;amp; = &amp;amp; 0\cdots\cdots旋度场必是无散场\\
+\vec\nabla \cdot (\vec\nabla f) &amp;amp; = &amp;amp; {\vec\nabla}^2f\\
+\vec\nabla \times(\vec\nabla \times \vec F) &amp;amp; = &amp;amp; \vec\nabla(\vec\nabla \cdot \vec F) - {\vec\nabla}^2 \vec F\\
+\end{eqnarray}
+$$&lt;/div&gt;
+&lt;p&gt;访问 &lt;a href="http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference"&gt;MathJax&lt;/a&gt; 参考更多使用方法。&lt;/p&gt;
+&lt;div class="footnote"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id="fn-footnote"&gt;
+&lt;p&gt;Leanote是一款强大的开源云笔记产品.&amp;#160;&lt;a class="footnote-backref" href="#fnref-footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</content><category term="Leanote"></category></entry><entry><title>量化相关资料</title><link href="/liang-hua-xiang-guan-zi-liao.html" rel="alternate"></link><published>2016-09-18T00:00:00+08:00</published><updated>2016-09-18T00:00:00+08:00</updated><author><name>Kane</name></author><id>tag:None,2016-09-18:/liang-hua-xiang-guan-zi-liao.html</id><summary type="html">&lt;h2&gt;Online books&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="https://www.otexts.org/fpp"&gt;Forecasting: principles and practice&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Website&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="http://robjhyndman.com/hyndsight/"&gt;HYNDSIGHT&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</summary><content type="html">&lt;h2&gt;Online books&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="https://www.otexts.org/fpp"&gt;Forecasting: principles and practice&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Website&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="http://robjhyndman.com/hyndsight/"&gt;HYNDSIGHT&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</content><category term="学习"></category></entry><entry><title>sublime+markdown 配置</title><link href="/sublimemarkdown-pei-zhi.html" rel="alternate"></link><published>2016-05-18T00:00:00+08:00</published><updated>2016-05-18T00:00:00+08:00</updated><author><name>Kane</name></author><id>tag:None,2016-05-18:/sublimemarkdown-pei-zhi.html</id><summary type="html">&lt;ol&gt;
+&lt;li&gt;安装package control :https://packagecontrol.io/installation&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl+Shift+P&lt;/code&gt; 选择Package control :install package, 输入MarkdownEditing，Markdown Preview。&lt;/li&gt;
+&lt;li&gt;中文字体支持：安装package: &lt;em&gt;ConvertToUTF8&lt;/em&gt;和&lt;em&gt;GBK Encoding Support&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;安装风格：&lt;strong&gt;Monokai Extended&lt;/strong&gt;
+设置：Preferences -&amp;gt; Color Scheme -&amp;gt; User -&amp;gt; Monokai Extended&lt;/li&gt;
+&lt;li&gt;Markdown preview设置：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cm"&gt;/* Sets the parser used for building markdown to HTML. */&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;
+&lt;span class="s"&gt;&amp;quot;parser&amp;quot;&lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;markdown&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;
+&lt;span class="cm"&gt;/* Enable or not mathjax …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;ol&gt;
+&lt;li&gt;安装package control :https://packagecontrol.io/installation&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl+Shift+P&lt;/code&gt; 选择Package control :install package, 输入MarkdownEditing，Markdown Preview。&lt;/li&gt;
+&lt;li&gt;中文字体支持：安装package: &lt;em&gt;ConvertToUTF8&lt;/em&gt;和&lt;em&gt;GBK Encoding Support&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;安装风格：&lt;strong&gt;Monokai Extended&lt;/strong&gt;
+设置：Preferences -&amp;gt; Color Scheme -&amp;gt; User -&amp;gt; Monokai Extended&lt;/li&gt;
+&lt;li&gt;Markdown preview设置：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cm"&gt;/* Sets the parser used for building markdown to HTML. */&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;
+&lt;span class="s"&gt;&amp;quot;parser&amp;quot;&lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;markdown&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;
+&lt;span class="cm"&gt;/* Enable or not mathjax support. */&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;
+&lt;span class="s"&gt;&amp;quot;enable_mathjax&amp;quot;&lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;true&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;
+&lt;span class="s"&gt;&amp;quot;enable_highlight&amp;quot;&lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;true&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;
+&lt;span class="cm"&gt;/* Remove github */&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;
+&lt;span class="s"&gt;&amp;quot;enabled_parsers&amp;quot;&lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;[&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;markdown&amp;quot;&lt;/span&gt;&lt;span class="err"&gt;]&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="err"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;浏览器预览（&lt;strong&gt;没成功&lt;/strong&gt;）：Key-Bindings设置：
+&lt;code&gt;{"keys": ["alt+m"], "command": "markdown_preview", "args": {"target": "browser", "parser":"markdown"}}&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;</content><category term="编程相关"></category></entry><entry><title>机器学习相关资料</title><link href="/ji-qi-xue-xi-xiang-guan-zi-liao.html" rel="alternate"></link><published>2016-05-15T00:00:00+08:00</published><updated>2016-05-18T00:00:00+08:00</updated><author><name>Kane</name></author><id>tag:None,2016-05-15:/ji-qi-xue-xi-xiang-guan-zi-liao.html</id><summary type="html">&lt;h2&gt;课程&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="http://blog.coursegraph.com/%E5%85%AC%E5%BC%80%E8%AF%BE%E5%8F%AF%E4%B8%8B%E8%BD%BD%E8%B5%84%E6%BA%90%E6%B1%87%E6%80%BB"&gt;公开课资源&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Stanford公开课：&lt;a href="http://web.stanford.edu/class/cs246/handouts.html"&gt;Mining Massive Data Sets&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Berkeley cs: &lt;a href="http://www.cs.berkeley.edu/~jordan/courses/260-spring10/"&gt;Bayesian Modeling and Inference&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Stanford &lt;a href="http://cs231n.stanford.edu/"&gt;CS231n: Convolutional Neural Networks for Visual Recognition&lt;/a&gt;,&lt;a href="http://cs231n.github.io/"&gt;Notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;课程：&lt;a href="http://www.cs.toronto.edu/~rgrosse/csc321/calendar.html"&gt;Introduction to Neural Networks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.cs.haifa.ac.il/~rita/uml_course/course_contents.html"&gt;Unsupervised Learning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://varianceexplained.org/RData/"&gt;Rdata&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;网站&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;网站：&lt;a href="https://www.52ml.net/"&gt;我爱机器学习&lt;/a&gt;，&lt;a href="http://www.52nlp.cn/"&gt;我爱自然语言处理&lt;/a&gt;,&lt;a href="http://www.52cs.org/"&gt;我爱计算机&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://playground.tensorflow.org/"&gt;Tensorflow playground&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;基于遗传算法设计NN的&lt;a href="http://www.otoro.net/ml/neat-playground"&gt;demo&lt;/a&gt;,而且可以有不同的activation functions,更多内容见: &lt;a href="http://www.otoro.net/ml/"&gt;http://www.otoro.net/ml/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://deeplearning.net/"&gt;Deep learning&lt;/a&gt;, &lt;a href="http://deeplearning.net/tutorial/contents.html"&gt;tutorials …&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;h2&gt;课程&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="http://blog.coursegraph.com/%E5%85%AC%E5%BC%80%E8%AF%BE%E5%8F%AF%E4%B8%8B%E8%BD%BD%E8%B5%84%E6%BA%90%E6%B1%87%E6%80%BB"&gt;公开课资源&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Stanford公开课：&lt;a href="http://web.stanford.edu/class/cs246/handouts.html"&gt;Mining Massive Data Sets&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Berkeley cs: &lt;a href="http://www.cs.berkeley.edu/~jordan/courses/260-spring10/"&gt;Bayesian Modeling and Inference&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Stanford &lt;a href="http://cs231n.stanford.edu/"&gt;CS231n: Convolutional Neural Networks for Visual Recognition&lt;/a&gt;,&lt;a href="http://cs231n.github.io/"&gt;Notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;课程：&lt;a href="http://www.cs.toronto.edu/~rgrosse/csc321/calendar.html"&gt;Introduction to Neural Networks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.cs.haifa.ac.il/~rita/uml_course/course_contents.html"&gt;Unsupervised Learning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://varianceexplained.org/RData/"&gt;Rdata&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;网站&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;网站：&lt;a href="https://www.52ml.net/"&gt;我爱机器学习&lt;/a&gt;，&lt;a href="http://www.52nlp.cn/"&gt;我爱自然语言处理&lt;/a&gt;,&lt;a href="http://www.52cs.org/"&gt;我爱计算机&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://playground.tensorflow.org/"&gt;Tensorflow playground&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;基于遗传算法设计NN的&lt;a href="http://www.otoro.net/ml/neat-playground"&gt;demo&lt;/a&gt;,而且可以有不同的activation functions,更多内容见: &lt;a href="http://www.otoro.net/ml/"&gt;http://www.otoro.net/ml/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://deeplearning.net/"&gt;Deep learning&lt;/a&gt;, &lt;a href="http://deeplearning.net/tutorial/contents.html"&gt;tutorials&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://wiki.swarma.net/index.php/%E9%A6%96%E9%A1%B5"&gt;集智&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Stanford:&lt;a href="http://ufldl.stanford.edu/wiki/index.php/Main_Page"&gt;&lt;strong&gt;Unsupervised Feature Learning and Deep Learning&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Blog :&lt;a href="http://www.zinkov.com/"&gt;http://www.zinkov.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;网络书籍&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="http://www.deeplearningbook.org/"&gt;Deep Learning Book&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;书籍 &lt;a href="http://neuralnetworksanddeeplearning.com/"&gt;http://neuralnetworksanddeeplearning.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</content><category term="机器学习"></category><category term="人工智能"></category></entry><entry><title>Lie derivatives and Covariant derivatives</title><link href="/lie-derivatives-and-covariant-derivatives.html" rel="alternate"></link><published>2015-11-10T00:00:00+08:00</published><updated>2015-11-10T00:00:00+08:00</updated><author><name>Kane</name></author><id>tag:None,2015-11-10:/lie-derivatives-and-covariant-derivatives.html</id><summary type="html">&lt;p&gt;In differential geometry, two concepts are always quite difficult to distinguish, one is the &lt;em&gt;Lie derivatives&lt;/em&gt;, the other is &lt;em&gt;Covariant derivatives&lt;/em&gt;. In order to distinguish them, first, we give the definition of them.&lt;/p&gt;
+&lt;p&gt;All &lt;em&gt;derivatives&lt;/em&gt; want to characterize the aspects of different manifolds, and to compare the quantities between different …&lt;/p&gt;</summary><content type="html">&lt;p&gt;In differential geometry, two concepts are always quite difficult to distinguish, one is the &lt;em&gt;Lie derivatives&lt;/em&gt;, the other is &lt;em&gt;Covariant derivatives&lt;/em&gt;. In order to distinguish them, first, we give the definition of them.&lt;/p&gt;
+&lt;p&gt;All &lt;em&gt;derivatives&lt;/em&gt; want to characterize the aspects of different manifolds, and to compare the quantities between different points in a manifold, we have to set up a rule to map them into each other, different &lt;em&gt;derivatives&lt;/em&gt; use different schema for comparison.&lt;/p&gt;
+&lt;p&gt;The most simple one is &lt;em&gt;direct derivatives&lt;/em&gt; defined by &lt;span class="math"&gt;\(\partial_{\nu}X^{\mu}\)&lt;/span&gt;, but in a manifold instead of Euclidean spaces, this quantity has no meaning because different points can have a very different local coordinates (or say different chart (U,&lt;span class="math"&gt;\(\phi\)&lt;/span&gt;)).&lt;/p&gt;
+&lt;p&gt;So a natural extension is to use &lt;strong&gt;mapping&lt;/strong&gt; to diffeomorphic two different points.&lt;/p&gt;
+&lt;h2&gt;Lie derivatives&lt;/h2&gt;
+&lt;p&gt;The main ingredient of &lt;em&gt;Lie derivatives&lt;/em&gt; is the &lt;strong&gt;flow&lt;/strong&gt; and the &lt;strong&gt;mapping&lt;/strong&gt; defined by &lt;em&gt;the flow&lt;/em&gt;.&lt;/p&gt;
+&lt;h3&gt;Two basic concepts:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Integral curve
+Let &lt;span class="math"&gt;\(X\)&lt;/span&gt; be a vector field in &lt;span class="math"&gt;\(M\)&lt;/span&gt;, an integral cruve &lt;span class="math"&gt;\(x(t)\)&lt;/span&gt; is a curve in &lt;span class="math"&gt;\(M\)&lt;/span&gt;, whose tangent vector at &lt;span class="math"&gt;\(x(t)\)&lt;/span&gt; is &lt;span class="math"&gt;\(X|_x\)&lt;/span&gt;. Given a chart &lt;span class="math"&gt;\((U,\phi)\)&lt;/span&gt;, this means
+&lt;div class="math"&gt;$$\frac{dx^{\mu}}{dt}=X^{\mu}(x(t))$$&lt;/div&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Flow
+A flow &lt;span class="math"&gt;\(\sigma(t,x)\)&lt;/span&gt; is a diffeomorphism from &lt;span class="math"&gt;\(M\)&lt;/span&gt; to &lt;span class="math"&gt;\(M\)&lt;/span&gt;, denoted by &lt;span class="math"&gt;\(\sigma_t:M\to M\)&lt;/span&gt;, which itself is an one-parameter group of transformations. Under the infinitesimal transformation &lt;span class="math"&gt;\(\varepsilon\)&lt;/span&gt;, we have
+&lt;div class="math"&gt;$$\sigma_{\varepsilon}^{\mu}(x)=\sigma^{\mu}(\varepsilon,x)=x^{\mu}+\varepsilon X^{\mu}(x)$$&lt;/div&gt;
+The vector field &lt;span class="math"&gt;\(X\)&lt;/span&gt; is called the &lt;strong&gt;infinitesimal generator&lt;/strong&gt; of the transformation &lt;span class="math"&gt;\(\sigma_t\)&lt;/span&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Lie derivatives&lt;/h3&gt;
+&lt;p&gt;Let &lt;span class="math"&gt;\(\sigma(t,x)\)&lt;/span&gt; and &lt;span class="math"&gt;\(\tau(t,x)\)&lt;/span&gt; be two flows generated by the vector fields &lt;span class="math"&gt;\(X\)&lt;/span&gt; and &lt;span class="math"&gt;\(Y\)&lt;/span&gt;,
+&lt;/p&gt;
+&lt;div class="math"&gt;$$\frac{d\sigma^{\mu}(s,x)}{ds}=X^{\mu}(\sigma(s,x))\\
+\frac{d\tau^{\mu}(t,x)}{dt}=Y^{\mu}(\tau(t,x))$$&lt;/div&gt;
+&lt;p&gt;
+Let us evaluate the change of the vector field &lt;span class="math"&gt;\(Y\)&lt;/span&gt; along &lt;span class="math"&gt;\(\sigma(s,x)\)&lt;/span&gt;.
+The &lt;strong&gt;Lie derivative&lt;/strong&gt; of a vector &lt;span class="math"&gt;\(Y\)&lt;/span&gt; along the flow &lt;span class="math"&gt;\(\sigma\)&lt;/span&gt; of &lt;span class="math"&gt;\(X\)&lt;/span&gt; is defined by
+&lt;/p&gt;
+&lt;div class="math"&gt;$$\mathcal{L}_XY=\lim_{\varepsilon\to 0}\frac{1}{\varepsilon}[(\sigma_{-\varepsilon})_{}Y|_{\sigma_{\varepsilon}(x)}-Y|_x]$$&lt;/div&gt;
+&lt;p&gt;
+First we have 
+&lt;/p&gt;
+&lt;div class="math"&gt;\begin{align}
+Y|_{\sigma_{\varepsilon}(x)}=&amp;amp;Y^{\mu}(x^{\nu}+\varepsilon X^{\nu}(x))e_{\mu}|_{x+\varepsilon X}\\
+\approx&amp;amp; Y^{\mu}(x)+\varepsilon X^{\nu}(x)\partial_{\nu}Y^{\mu}(x)e_{\mu}|_{x+\varepsilon X}
+\end{align}&lt;/div&gt;
+&lt;p&gt;
+Then
+&lt;/p&gt;
+&lt;div class="math"&gt;\begin{align}
+{\sigma_{-\varepsilon}}_{}Y|_{\sigma_{\varepsilon}(x)}=&amp;amp;(Y^{\mu}(x)+\varepsilon X^{\lambda}(x)\partial_{\lambda}Y^{\mu}(x))\partial\frac{x^{\nu}-\varepsilon X^{\nu}}{\partial x^{\mu}}e_{\nu}|_{x}\\
+\approx&amp;amp; (Y^{\mu}+\varepsilon X^{\nu}\partial_{\nu}Y^{\mu}-\varepsilon Y^{\nu}\partial_{\nu}X^{\mu})e_{\mu}|_{x}
+\end{align}&lt;/div&gt;
+&lt;p&gt;
+We get
+&lt;/p&gt;
+&lt;div class="math"&gt;$$\mathcal{L}_{X}Y=X^{\nu}\partial_{\nu}Y^{\mu}-Y^{\nu}\partial_{\nu}X^{\mu}=[X,Y]$$&lt;/div&gt;
+&lt;p&gt;For the same routine, we get:
+&lt;/p&gt;
+&lt;div class="math"&gt;$$\mathcal{L}_{X}\omega=(X^{\nu}\partial_{\nu}\omega_{\mu}+\omega_{\nu}\partial_{\mu}X^{\nu})dx^{\mu}$$&lt;/div&gt;
+&lt;h3&gt;Other derivations&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;From &lt;span class="math"&gt;\(x^{\mu}\to x^{\mu}+\epsilon X^{\mu}\)&lt;/span&gt;, we have
+&lt;div class="math"&gt;\begin{align}
+Y'^{\mu}(x')=&amp;amp;\frac{\partial x'^{\mu}}{\partial x^{\nu}}Y^{\nu}(x)\\
+=&amp;amp;Y^{\mu}(x)+\epsilon \partial_{\nu}X^{\mu}Y^{\nu}(x)
+\end{align}&lt;/div&gt;
+Then we have
+&lt;div class="math"&gt;\begin{align}
+Y'^{\mu}(x)=&amp;amp;Y^{\mu}(x-\epsilon X)+\epsilon \partial_{\nu}X^{\mu}Y^{\nu}(x-\epsilon X)\\
+\approx &amp;amp; Y^{\mu}(x)-\epsilon X^{\nu}\partial_{\nu}Y^{\mu}+\epsilon \partial_{\nu}X^{\mu}Y^{\nu}(x)
+\end{align}&lt;/div&gt;
+Then
+&lt;div class="math"&gt;$$\mathcal{L}_XY(x)=\lim_{\epsilon\to 0}\frac{Y^{\mu}(x)-Y'^{\mu}(x)}{\epsilon}=X^{\nu}\partial_{\nu}Y^{\mu}-Y^{\nu}\partial_{\nu}X^{\mu}$$&lt;/div&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Or from &lt;span class="math"&gt;\(Y^{'\mu}(x')=\frac{\partial{x^{'\mu}}}{\partial x^{\nu}}Y^{\nu}(x)\)&lt;/span&gt;, then we exchange the coordinates &lt;span class="math"&gt;\(x \leftrightarrow x'\)&lt;/span&gt;, we have
+&lt;div class="math"&gt;\begin{align}
+Y^{'\mu}(x)=&amp;amp;\frac{\partial{x^{\mu}}}{\partial x^{'\nu}}Y^{\nu}(x')\\
+=&amp;amp;(\delta_{\nu}^{\mu}-\epsilon\partial_{\nu}X^{\mu})(Y^{\nu}+\epsilon X^{\lambda}\partial_{\lambda}Y^{\nu})\\
+=&amp;amp;Y^{\mu}+\epsilon X^{\nu}\partial_{\nu}Y^{\mu}-\epsilon Y^{\nu}\partial_{\nu}X^{\mu}
+\end{align}&lt;/div&gt;
+Also gives
+&lt;div class="math"&gt;$$\mathcal{L}_XY(x)=\lim_{\epsilon\to 0}\frac{Y'^{\mu}(x)-Y^{\mu}(x)}{\epsilon}=X^{\nu}\partial_{\nu}Y^{\mu}-Y^{\nu}\partial_{\nu}X^{\mu}$$&lt;/div&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Meaning of Lie derivative&lt;/h3&gt;
+&lt;p&gt;Geometrically, the &lt;em&gt;Lie bracket&lt;/em&gt; shows the non-commutativity of two &lt;em&gt;flows&lt;/em&gt;.
+For two flows &lt;span class="math"&gt;\(\sigma(\epsilon,x)\)&lt;/span&gt; and &lt;span class="math"&gt;\(\tau(\delta,y)\)&lt;/span&gt; generate by &lt;span class="math"&gt;\(\bf{X}\)&lt;/span&gt; and &lt;span class="math"&gt;\(\bf{Y}\)&lt;/span&gt;, we have:
+&lt;/p&gt;
+&lt;div class="math"&gt;\begin{align}
+\tau^{\mu}(\delta,\sigma(\epsilon,x)) &amp;amp;\approx \tau^{\mu}(\delta,x^{\nu}+\epsilon X^{\nu}(x))\\
+&amp;amp;\approx (x^{\mu}+\epsilon X^{\mu}(x))+\delta Y^{\mu}(x^{\nu}+\epsilon X^{\nu}(x))\\
+&amp;amp;\approx x^{\mu}+\epsilon X^{\mu}(x)+\delta Y^{\mu}(x)+\epsilon\delta X^{\nu}(x)\partial_{\nu}Y^{\mu}(x)
+\end{align}&lt;/div&gt;
+&lt;p&gt;
+And
+&lt;/p&gt;
+&lt;div class="math"&gt;$$\sigma^{\mu}(\epsilon,\tau(\delta,x)) \approx x^{\mu}+\epsilon X^{\mu}(x)+\delta Y^{\mu}(x)+\epsilon\delta Y^{\nu}(x)\partial_{\nu}X^{\mu}(x)$$&lt;/div&gt;
+&lt;p&gt;
+Then we get
+&lt;/p&gt;
+&lt;div class="math"&gt;$$\tau^{\mu}(\delta,\sigma(\epsilon,x))-\sigma^{\mu}(\epsilon,\tau(\delta,x))=\epsilon\delta[X,Y]^{\mu}$$&lt;/div&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</content><category term="数学"></category></entry><entry><title>Noether's theorem and Ward-Takahashi identity</title><link href="/noethers-theorem-and-ward-takahashi-identity.html" rel="alternate"></link><published>2015-11-01T00:00:00+08:00</published><updated>2015-11-01T00:00:00+08:00</updated><author><name>Kane</name></author><id>tag:None,2015-11-01:/noethers-theorem-and-ward-takahashi-identity.html</id><summary type="html">&lt;p&gt;In classical and quantum field theory, it is claimed that every continuous symmetry leads to a conservation law. But the derivation usually takes different form and quite confusing sometimes. Here, we deduce it in different scenarios and also in both classical field and quantum field theory.&lt;/p&gt;
+&lt;h2&gt;1. In the passive …&lt;/h2&gt;</summary><content type="html">&lt;p&gt;In classical and quantum field theory, it is claimed that every continuous symmetry leads to a conservation law. But the derivation usually takes different form and quite confusing sometimes. Here, we deduce it in different scenarios and also in both classical field and quantum field theory.&lt;/p&gt;
+&lt;h2&gt;1. In the passive point of view&lt;/h2&gt;
+&lt;p&gt;This means the coordinates &lt;span class="math"&gt;\(x\)&lt;/span&gt; and &lt;span class="math"&gt;\(x'\)&lt;/span&gt; correspond to the same point but given by different frame, also the integral area &lt;span class="math"&gt;\(\Omega\)&lt;/span&gt; and &lt;span class="math"&gt;\(\Omega'\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Total derivative&lt;/strong&gt;: here, we first clarify a very useful concept &lt;em&gt;total derivative&lt;/em&gt;. For a general transformation: 
+&lt;/p&gt;
+&lt;div class="math"&gt;$$x_{\mu}\to x'_{\mu}=x_{\mu}+\delta x_{\mu}\\
+\phi_r(x)\to\phi_r'(x')=\phi_r(x)+\delta\phi_r(x)$$&lt;/div&gt;
+&lt;p&gt;
+Then the &lt;em&gt;total derivative&lt;/em&gt; defines by:
+&lt;/p&gt;
+&lt;div class="math"&gt;\begin{align}
+\tilde{\delta}\phi_r(x)&amp;amp;\equiv\phi_r'(x)-\phi_r(x)=\phi_r'(x')-\phi_r(x)+\phi_r'(x)-\phi_r'(x')\\
+&amp;amp;={\delta}\phi_r(x)-\delta x_{\mu}\partial^{\mu}\phi_r(x)
+\end{align}&lt;/div&gt;
+&lt;p&gt;
+The &lt;em&gt;total derivative&lt;/em&gt; has very good property:
+&lt;/p&gt;
+&lt;div class="math"&gt;$$\partial_{\mu}\tilde{\delta}\phi_r(x)=\tilde{\delta}\partial_{\mu}\phi_r(x)$$&lt;/div&gt;
+&lt;p&gt;
+&lt;strong&gt;Notice&lt;/strong&gt;: this &lt;em&gt;total derivative&lt;/em&gt; is regardless of whether we are in &lt;em&gt;passive&lt;/em&gt; or &lt;em&gt;active&lt;/em&gt; viewpoint.
+Then:
+&lt;/p&gt;
+&lt;div class="math"&gt;$$\delta S=\int_{\Omega'}d^4x'\mathcal{L}'(x')-\int_{\Omega}d^4x\mathcal{L}(x)$$&lt;/div&gt;
+&lt;p&gt;
+where &lt;span class="math"&gt;\(\mathcal{L}'(x')\equiv \mathcal{L}(\phi'(x'),\partial'_{\mu}\phi'(x'),x')\)&lt;/span&gt;.
+From &lt;span class="math"&gt;\(\mathcal{L}'(x')=\mathcal{L}(x)+\delta\mathcal{L}(x)\)&lt;/span&gt;, which gives
+&lt;/p&gt;
+&lt;div class="math"&gt;$$\delta S=\int_{\Omega'}d^4x'\delta\mathcal{L}(x)+\int_{\Omega'}d^4x'\mathcal{L}(x)-\int_{\Omega}d^4x\mathcal{L}(x)$$&lt;/div&gt;
+&lt;p&gt;
+From &lt;span class="math"&gt;\(d^4x'=(1+\partial_{\mu}\delta x^{\mu})d^4x\)&lt;/span&gt;, we have
+&lt;/p&gt;
+&lt;div class="math"&gt;$$\int_{\Omega'}d^4x'\delta\mathcal{L}(x)\approx \int_{\Omega}d^4x\delta\mathcal{L}(x)$$&lt;/div&gt;
+&lt;p&gt;
+Because &lt;span class="math"&gt;\(\Omega'\)&lt;/span&gt; is just the same as &lt;span class="math"&gt;\(\Omega\)&lt;/span&gt; and we omit the second and high order &lt;span class="math"&gt;\(\delta\)&lt;/span&gt;. Also:
+&lt;/p&gt;
+&lt;div class="math"&gt;$$\int_{\Omega'}d^4x'\mathcal{L}(x)-\int_{\Omega}d^4x\mathcal{L}(x)\\
+=\int_{\Omega}d^4x\partial_{\mu}\delta x^{\mu}\mathcal{L}(x)$$&lt;/div&gt;
+&lt;p&gt;
+Then we have
+&lt;/p&gt;
+&lt;div class="math"&gt;$$\delta S=\int_{\Omega}d^4x\delta\mathcal{L}(x)+\int_{\Omega}d^4x\partial_{\mu}\delta x^{\mu}\mathcal{L}(x)\\
+=\int_{\Omega}d^4x\left(\tilde{\delta}\mathcal{L}(x)+\partial_{\mu}\mathcal{L}(x)\delta x^{\mu}\right)+\int_{\Omega}d^4x\partial_{\mu}\delta x^{\mu}\mathcal{L}(x)\\
+=\int_{\Omega}d^4x\left(\tilde{\delta}\mathcal{L}(x)+\partial_{\mu}(\delta x^{\mu}\mathcal{L}(x))\right)$$&lt;/div&gt;
+&lt;p&gt;
+Then we can get
+&lt;/p&gt;
+&lt;div class="math"&gt;$$\tilde{\delta}\mathcal{L}(x)=\partial^{\mu}\left[\frac{\partial\mathcal{L}(x)}{\partial(\partial^{\mu}\phi_r)}\tilde{\delta}\phi_r(x)\right],$$&lt;/div&gt;
+&lt;p&gt;
+where &lt;em&gt;Euler-Lagrangian formula&lt;/em&gt; has been used.
+Define:
+&lt;/p&gt;
+&lt;div class="math"&gt;\begin{align}
+j_{\mu}(x)=&amp;amp;\frac{\partial\mathcal{L}(x)}{\partial(\partial^{\mu}\phi_r)}\tilde{\delta}\phi_r(x)+\mathcal{L}(x)\delta x_{\mu}\\
+=&amp;amp;\frac{\partial\mathcal{L}(x)}{\partial(\partial^{\mu}\phi_r)}{\delta}\phi_r(x)-\left(\frac{\partial\mathcal{L}(x)}{\partial(\partial^{\mu}\phi_r)}\partial_{\nu}\phi_r(x)-g_{\mu\nu}\mathcal{L}(x)\right)\delta x^{\nu},
+\end{align}&lt;/div&gt;
+&lt;p&gt;
+we get
+&lt;/p&gt;
+&lt;div class="math"&gt;$$\partial^{\mu}j_{\mu}(x)=0$$&lt;/div&gt;
+&lt;p&gt;
+Which is the &lt;em&gt;Noether's theorem&lt;/em&gt;.&lt;/p&gt;
+&lt;h2&gt;2. In the active point of view&lt;/h2&gt;
+&lt;p&gt;What we want to do is to calculate the variantion 
+&lt;/p&gt;
+&lt;div class="math"&gt;$$\delta S=\int_{\Omega'}d^4x'\mathcal{L}(\phi_r'(x'),\partial_{\mu}'\phi_r'(x'))-\int_{\Omega}d^4x\mathcal{L}(\phi_r(x),\partial_{\mu}\phi_r(x))$$&lt;/div&gt;
+&lt;p&gt;
+Since &lt;span class="math"&gt;\(x'\)&lt;/span&gt; is a dumb variant, we can recall it as &lt;span class="math"&gt;\(x\)&lt;/span&gt;, then
+&lt;/p&gt;
+&lt;div class="math"&gt;\begin{align}
+\delta S=&amp;amp;\int_{\Omega'}d^4x\mathcal{L}(\phi_r'(x),\partial_{\mu}'\phi_r'(x))-\int_{\Omega}d^4x\mathcal{L}(\phi_r(x),\partial_{\mu}\phi_r(x))\\
+=&amp;amp;\int_{\Omega}\tilde{\delta}\mathcal{L}(x)+\int_{\Omega'-\Omega}d^4x\mathcal{L}(\phi_r'(x),\partial_{\mu}'\phi_r'(x))\\
+=&amp;amp;\int_{\Omega}\tilde{\delta}\mathcal{L}(x)+\int_{\partial\Omega}dS_{\lambda}\delta x^{\lambda}\mathcal{L}(\phi_r(x),\partial_{\mu}\phi_r(x))\\
+=&amp;amp;\int_{\Omega}\partial_{\mu}(\frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\phi_r)}\tilde{\delta}\phi_r)+\int_{\Omega}dx^4\partial_{\lambda}(\delta x^{\lambda}\mathcal{L}(\phi_r(x),\partial_{\mu}\phi_r(x)))\\
+=&amp;amp;\int_{\Omega}\partial_{\mu}(\frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\phi_r)}\tilde{\delta}\phi_r+\delta x^{\mu}\mathcal{L})
+\end{align}&lt;/div&gt;
+&lt;p&gt;
+Where &lt;span class="math"&gt;\(\tilde{\delta}\phi_r=\delta\phi_r-\partial_{\mu}\phi_r\delta x^{\mu}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;h2&gt;3. Simpler one (akin to active point of view)&lt;/h2&gt;
+&lt;p&gt;The coordinate is unchanged, but the field is changed to &lt;span class="math"&gt;\(\phi(x')\)&lt;/span&gt; for scalar field and &lt;span class="math"&gt;\({T(\Lambda)^{-1}}_r^s\phi_s(x')\)&lt;/span&gt; for vector field.
+&lt;/p&gt;
+&lt;div class="math"&gt;$$\delta\mathcal{L}=\partial_{\mu}(\frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\phi_r)}\delta\phi_r)=\mathcal{L}(x')-\mathcal{L}(x)$$&lt;/div&gt;
+&lt;p&gt;
+For translation symmetry, &lt;span class="math"&gt;\(x'=x+\epsilon\)&lt;/span&gt;, &lt;span class="math"&gt;\(\delta\phi_r=\phi_r(x')-\phi_r(x)=\epsilon^{\mu}\partial_{\mu}\phi_r\)&lt;/span&gt;, which gives
+&lt;/p&gt;
+&lt;div class="math"&gt;$$\partial_{\mu}(\frac{\partial\mathcal{L}}{\partial(\partial^{\mu}\phi_r)}\partial_{\nu}\phi_r-g_{\mu\nu}\mathcal{L})=0$$&lt;/div&gt;
+&lt;p&gt;
+For Lorentz transformation, we have &lt;span class="math"&gt;\(x'=x+\delta\omega^{\mu}{}_{\nu}x^{\nu}\)&lt;/span&gt;, &lt;/p&gt;
+&lt;div class="math"&gt;$$\delta\phi_r=T(\Lambda)^{-1}{}_r{}^s\phi_s(x')-\phi(x)=\delta\omega_{\mu\nu}(x^{\nu}\partial^{\mu}\phi_r+\frac{i}{2}(J^{\mu\nu})_r{}^s\phi_s)$$&lt;/div&gt;
+&lt;p&gt;
+where &lt;span class="math"&gt;\(T(\Lambda){}_r{}^s=\delta_r{}^s-\frac{i}{2}\delta_{\mu\nu}(J^{\mu\nu})_r{}^s\)&lt;/span&gt;
+we get
+&lt;/p&gt;
+&lt;div class="math"&gt;$$\partial^{\mu}f_{\mu}=0$$&lt;/div&gt;
+&lt;p&gt;
+with
+&lt;/p&gt;
+&lt;div class="math"&gt;$$f_{\mu}=\frac{1}{2}\delta\omega^{\nu\lambda}M_{\mu\nu\lambda}$$&lt;/div&gt;
+&lt;div class="math"&gt;$$M_{\mu\nu\lambda}=\Theta_{\mu\lambda}x_{\nu}-\Theta_{\mu\nu}x_{\lambda}+i\frac{\partial\mathcal{L}}{\partial(\partial^{\mu}\phi_r)}(J_{\nu\lambda})_r{}^s\phi_s$$&lt;/div&gt;
+&lt;p&gt;
+where
+&lt;/p&gt;
+&lt;div class="math"&gt;$$\Theta_{\mu\nu}=\frac{\partial\mathcal{L}}{\partial(\partial^{\mu}\phi_r)}\partial_{\nu}\phi_r-g_{\mu\nu}\mathcal{L}$$&lt;/div&gt;
+&lt;p&gt;
+&lt;strong&gt;Or another way around&lt;/strong&gt;: &lt;span class="math"&gt;\(\phi(x)\to T(\Lambda)\phi(\Lambda^{-1}x)\)&lt;/span&gt;&lt;/p&gt;
+&lt;h2&gt;4. General argument&lt;/h2&gt;
+&lt;h2&gt;5. Ward-Takahashi identity&lt;/h2&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</content><category term="物理"></category><category term="QFT"></category></entry><entry><title>《Intuition Pumps》读书笔记 Chapter 58</title><link href="/intuition-pumps-du-shu-bi-ji-chapter-58.html" rel="alternate"></link><published>2014-11-03T00:00:00+08:00</published><updated>2014-11-03T00:00:00+08:00</updated><author><name>Kane</name></author><id>tag:None,2014-11-03:/intuition-pumps-du-shu-bi-ji-chapter-58.html</id><summary type="html">&lt;p&gt;这一节主要讲到qualia的含义的不明确性。文中先讲到了两个很有意思的认知神经病例：prosopagnosia 和 Capgras delusion.&lt;/p&gt;
+&lt;p&gt;Prosopagnosia 指脸部失认症，患这种病症的病人的视觉系统正常，但却无法识别人脸。他们能够区分男女老幼，亚洲人或欧洲人，但是却无法区分性别相同年龄相仿的朋友们的脸。而更有意思的是，尽管认知层面他们无法识别人脸，但实际上，在某种意义上，他们却又可以识别人脸，甚至他们自己都没有意识到。当展示他们一张熟人照片，并要求从听到的几个候选名字中选出认为匹配的名字的时候，他们是随机选择的，但是，他们的皮肤电信号响应（galvanic skin response）（用于测量情绪起伏的）却特别强烈，当他们听到正确名字的时候。&lt;/p&gt;
+&lt;p&gt;所以，在一个非常简化的模型中，可以认为大脑中有两套相互独立的人脸识别系统。在我们的例子中，受伤的意识系统，认为是高层次的位于视觉皮层的系统，无法帮助受试者识别人脸。但没有受伤的非意识系统，可认为是低层次的边缘系统，却会对人脸识别做出响应。&lt;/p&gt;
+&lt;p&gt;与患者脸部失认症的病人相反，患有Capgras delusion的病人，会突然相信自己的爱人或亲人，是被秘密调换的冒名顶替的复制品。他们并没有精神病，只是像被植入了一个信念，使他们相信他们的爱人是假的。他们能够识别爱人的脸，所以意识系统没问题 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;这一节主要讲到qualia的含义的不明确性。文中先讲到了两个很有意思的认知神经病例：prosopagnosia 和 Capgras delusion.&lt;/p&gt;
+&lt;p&gt;Prosopagnosia 指脸部失认症，患这种病症的病人的视觉系统正常，但却无法识别人脸。他们能够区分男女老幼，亚洲人或欧洲人，但是却无法区分性别相同年龄相仿的朋友们的脸。而更有意思的是，尽管认知层面他们无法识别人脸，但实际上，在某种意义上，他们却又可以识别人脸，甚至他们自己都没有意识到。当展示他们一张熟人照片，并要求从听到的几个候选名字中选出认为匹配的名字的时候，他们是随机选择的，但是，他们的皮肤电信号响应（galvanic skin response）（用于测量情绪起伏的）却特别强烈，当他们听到正确名字的时候。&lt;/p&gt;
+&lt;p&gt;所以，在一个非常简化的模型中，可以认为大脑中有两套相互独立的人脸识别系统。在我们的例子中，受伤的意识系统，认为是高层次的位于视觉皮层的系统，无法帮助受试者识别人脸。但没有受伤的非意识系统，可认为是低层次的边缘系统，却会对人脸识别做出响应。&lt;/p&gt;
+&lt;p&gt;与患者脸部失认症的病人相反，患有Capgras delusion的病人，会突然相信自己的爱人或亲人，是被秘密调换的冒名顶替的复制品。他们并没有精神病，只是像被植入了一个信念，使他们相信他们的爱人是假的。他们能够识别爱人的脸，所以意识系统没问题，有问题的是非意识的边缘系统，无法对对方做出应有的情绪反应。就像是某些东西缺失了，这种感受是如此的强烈，甚至完全颠覆意识系统的结论，最终使大脑坚信面前的爱人是假的。&lt;/p&gt;
+&lt;p&gt;把上述情况往下推，作者设计了一个Intuition Pump，一个想象的被称为Clapgras的病人。他的症状很类似Capgras delusion，但比之更甚。&lt;/p&gt;
+&lt;p&gt;Clapgras 过着一个很平常的生活，但某天醒来睁开眼之后，却发现整个世界都有点不对劲了，他的描述是“be confronted by a strangely disgusting world, familiar but also different in some way that defies description".他的视觉系统没问题，能分辨不同的颜色，能通过标准的Ishihara测验（石原氏色盲测验），但是对所有颜色的情绪反应都反过来了（he has undergone a profound inversion of all his emotional and attentional reactions to colors）。以前的一些让他喜欢的颜色组合，他会讨厌，而原来不喜欢的颜色组合，现在又感觉舒服了。&lt;/p&gt;
+&lt;p&gt;我们可以很简单的解释说：她的颜色qualia被反过来了，而高层次的认知系统正常。（he's undergone a total color qualia inversion while leaving intact his merely high-level cognitive color talents.）那么他自己是否觉得自己的颜色qualia反过来了呢？如果把一个成熟的柠檬放在他眼前，他体验到的是客观的内禀的（intrinsic subjective)黄色还是客观的内禀的蓝色呢？因为他的视觉中枢没有损伤，所以他也许会说自己当然体验到的是黄色，但是我们又怎么知道他知道自己说的是什么意思呢？毕竟在很大意义上，他大脑对柠檬的感觉是”蓝“的，除了在认知层面，他把柠檬定义为黄色。（这一论点可以简单的用一个反问句概况：你体验到的黄色和我体验到的黄色一样吗？）&lt;/p&gt;
+&lt;p&gt;qualia的原始定义是：a property as it is experienced as distinct from any source it might have in a physical object. 但正如脸部失认症患者所遇到的，他们认得(direct acquaintance)他们看到的熟悉的脸，在"visual qualia"层面，但是他们却无法把那些脸作为体验到的qualia而用于识别(recognize)他们。所以也许qualia并不是我们用于识别颜色的实验基础，或者说qualia本身的定义就有不明确性。&lt;/p&gt;</content><category term="读书笔记"></category><category term="脑神经科学"></category></entry><entry><title>MIU</title><link href="/miu.html" rel="alternate"></link><published>2014-04-01T00:00:00+08:00</published><updated>2014-04-01T00:00:00+08:00</updated><author><name>Kane</name></author><id>tag:None,2014-04-01:/miu.html</id><summary type="html">&lt;p&gt;去了厦大一个礼拜，昨晚归来，但那种浓烈的化不开的忧郁并没有丝毫减除。休息或逃离，改变不了任何事，能让人暂时忘了烦恼，但永不是救赎。所以，即使是在厦大的一周，依旧没心情可言，而在归来之后，也只是陷入更深的泥淖。&lt;/p&gt;
+&lt;p&gt;前天晚上和昨天，分别看了一个纪录片，《56 up》和《浮生一日》，都是关于生活本身的好片子。理想与现实，宿命与抗争，爱与孤独，以及那无边的虚无和对意义存在感的探寻，无不指向生命的核心，但又不见归途。&lt;/p&gt;
+&lt;p&gt;我又何尝不是深陷其中，被无形的牢笼封得严严实实，没有勇气和力量去突围。以前物理就是我的信仰，但现在不是了，现在没了信仰，失去了目标和方向，飘渺不定。开始羡慕起那些信徒，可以坚定的诚心做一件事情，找到心之所依。&lt;/p&gt;
+&lt;p&gt;人真的有可能抓住自己的头发把自己提起来吗？在过去的很长一段时间，一直求改变，但与两年前相比，情况却几无变化，甚至更糟，无以名状的焦虑感越来越重。如此，两年后，是否依旧？这里面是有多大的宿命呢？&lt;/p&gt;
+&lt;p&gt;爱是什么？我没有能力去爱人，也不爱自己 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;去了厦大一个礼拜，昨晚归来，但那种浓烈的化不开的忧郁并没有丝毫减除。休息或逃离，改变不了任何事，能让人暂时忘了烦恼，但永不是救赎。所以，即使是在厦大的一周，依旧没心情可言，而在归来之后，也只是陷入更深的泥淖。&lt;/p&gt;
+&lt;p&gt;前天晚上和昨天，分别看了一个纪录片，《56 up》和《浮生一日》，都是关于生活本身的好片子。理想与现实，宿命与抗争，爱与孤独，以及那无边的虚无和对意义存在感的探寻，无不指向生命的核心，但又不见归途。&lt;/p&gt;
+&lt;p&gt;我又何尝不是深陷其中，被无形的牢笼封得严严实实，没有勇气和力量去突围。以前物理就是我的信仰，但现在不是了，现在没了信仰，失去了目标和方向，飘渺不定。开始羡慕起那些信徒，可以坚定的诚心做一件事情，找到心之所依。&lt;/p&gt;
+&lt;p&gt;人真的有可能抓住自己的头发把自己提起来吗？在过去的很长一段时间，一直求改变，但与两年前相比，情况却几无变化，甚至更糟，无以名状的焦虑感越来越重。如此，两年后，是否依旧？这里面是有多大的宿命呢？&lt;/p&gt;
+&lt;p&gt;爱是什么？我没有能力去爱人，也不爱自己，但人生除了爱，还有什么值得珍惜呢？理想早已丢失在不知名的角落，甚至找不到早上起床的理由。有时会想，若是抛弃眼前的一切，去一个没人认识自己的地方，换一种方式生活，那又会是怎样一种光景。但也许永远也只是想想而已……&lt;/p&gt;</content><category term="生活"></category><category term="成长"></category></entry><entry><title>The God, grace and serendipity</title><link href="/the-god-grace-and-serendipity.html" rel="alternate"></link><published>2013-07-25T00:00:00+08:00</published><updated>2013-07-25T00:00:00+08:00</updated><author><name>Kane</name></author><id>tag:None,2013-07-25:/the-god-grace-and-serendipity.html</id><summary type="html">&lt;p&gt;&lt;img alt="" src="/images/grace.jpg" title="grace"&gt;&lt;/p&gt;
+&lt;p&gt;我并不是个坚定的无神论者（atheist），最多只能算得上是个不可知论者（agnostic），宇宙的惊奇之处常常会出乎我们的预料。例如，作为有自由意志的人类本身的存在，就足以是个奇迹。而更神奇的，还有万物运行的规律的可理解性，这正是爱因斯坦所说过的：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“The most incomprehensible thing about the world is that it is at all comprehensible."&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;有时候，我们会把它看成是：the God。不过，God这个词，只是一个称呼，没必要深究其具体含义了。&lt;/p&gt;
+&lt;p&gt;这让我想到了霍金在新书《大设计》里面的信念，那就是，宇宙并没有一个设计者，或者说，不存在第一推动难题，我们的宇宙没有给上帝的存在保留位置。但是从另一个方面，想起曾经人们为CERN的LHC项目的担忧，害怕它的运行会产生微型黑洞，进而吞噬地球。那么是否有可能，我们的宇宙也只不过是某个高级文明实验室里的产物呢？我们身处宇宙之内，无法知晓宇宙是否有之外之说，或者是得到宇宙之外的信息 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="" src="/images/grace.jpg" title="grace"&gt;&lt;/p&gt;
+&lt;p&gt;我并不是个坚定的无神论者（atheist），最多只能算得上是个不可知论者（agnostic），宇宙的惊奇之处常常会出乎我们的预料。例如，作为有自由意志的人类本身的存在，就足以是个奇迹。而更神奇的，还有万物运行的规律的可理解性，这正是爱因斯坦所说过的：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“The most incomprehensible thing about the world is that it is at all comprehensible."&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;有时候，我们会把它看成是：the God。不过，God这个词，只是一个称呼，没必要深究其具体含义了。&lt;/p&gt;
+&lt;p&gt;这让我想到了霍金在新书《大设计》里面的信念，那就是，宇宙并没有一个设计者，或者说，不存在第一推动难题，我们的宇宙没有给上帝的存在保留位置。但是从另一个方面，想起曾经人们为CERN的LHC项目的担忧，害怕它的运行会产生微型黑洞，进而吞噬地球。那么是否有可能，我们的宇宙也只不过是某个高级文明实验室里的产物呢？我们身处宇宙之内，无法知晓宇宙是否有之外之说，或者是得到宇宙之外的信息，所以，也永远无法知道是否真有那样一个God，站在宇宙之外鸟瞰着这一切。&lt;/p&gt;
+&lt;p&gt;也就是说：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;God 已死，God 永生！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;但我这里想说的，可能并非这样的一种物理上的God,而更多的是某种冥冥中的信念。&lt;/p&gt;
+&lt;p&gt;《少有人走的路》是本令我印象很深的一本书，里面就很好的诠释着这样一种信念，书里面称之为：grace，译为，上帝的慈悲。还有另外一个很好的词：bliss，天赐的福。&lt;/p&gt;
+&lt;p&gt;书中提到了作者发现的一个很有意思的现象。在对心理疾病、精神病的研究中，我们都知道这和童年时的经历很有关。但神奇的不是有些人为什么会发病，而是另外一些人，有着更加悲惨不堪的童年经历，却为何没有发病，而是成长为一个非常温暖健康的人。所以冥冥中somehow有着某种神奇的力量，这种力量使得人能够处理想象不到的艰难而不至于崩溃，我们称之为：resilience。我们常说，一个人的质地取决于他的强度和韧性，而这种韧性就是这里所说的resilience，但为何某些人的resilience是如此之强，而另一些人却很脆弱，却并没有一个很合理的解释。更或者，我们所有人都有着比我们想象的更多的resilience，这同样可以用莫泊桑的那段名言来说明：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;生活不可能像你想象得那么好，但也不会像你想象得那么糟。我觉得人的脆弱和坚强都超乎自己的想象。有时，我可能脆弱得一句话就泪流满面，有时，也发现自己咬着牙走了很长的路。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;如果说对基础科学本身将来可能达到的高度，更多的是某种信心。而对于技术将可能有的成就，我却不抱任何怀疑。这种信念来自于对人类本身的敬畏。只要给予足够的时间，治愈所有的疾病，人造生命什么的，并不是什么难事。甚至人类自身的这副皮囊，也可能会被抛弃，或是上载到计算机体系（见《爱的算法》），或是以无形的超意识体的形式存在（例如《Stargate》里的Ancient的ascend形态），或是其他种种意想不到的方式存在。&lt;/p&gt;
+&lt;p&gt;在达到这种状态之前，生物体本身所体现出的容错能力就令人惊奇。我们无时无刻不承受着各种威胁，高能射线穿过身体，各种物理的化学的生物的威胁，但几乎绝大多数时刻我们的机体都能够自动修复。射线破坏的DNA链，我们会先尝试着修补，不行的话，就直接让该细胞进行程序性死亡，出错而导致病变的可能性很小，而这种容错与修复机制本身对于生物的进化是至关重要的。&lt;/p&gt;
+&lt;p&gt;在书中，作者说到了几个小故事。在某些时刻，我们会无缘故的有一些念头，而在下一刻，同样的场景可能真的就发生了。作者驾驶着汽车将要到达某个狭窄转角的时候，头脑里突然显现将会有另一辆汽车从转角经过，于是便紧急刹了车，而真正就在那时候，一辆汽车拐过转角，如果作者没有刹车的话，那一定就撞上了。&lt;/p&gt;
+&lt;p&gt;而在更多的车祸现场，我们会发现车子本身被撞得稀巴烂，而里面的人竟然安然无恙或只是受轻伤，而在任何合理假设的情况下，都是不可能存活下来的。作者不知道该如何解释它，但提到了同时性（synchronization）的概念。到底是在发生车祸的当时，人感受到车子将要形变后的模样而相应的做出身体的调整，还是车子本身感受到人的形状而变形到恰恰不至于弄伤里面的人呢？我们对此没有太多的想法，只能说这是某种形式的grace了。&lt;/p&gt;
+&lt;p&gt;我们几乎都有过“似曾相识”的体验（Deja vu），也经常有“说曹操，曹操到”的情景。似乎我们有所谓的第六感，会时不时的预见未来的场景，或是出现凑巧的事情。在《少有人走的路》里，作者就讲到了这样一个故事。在写作那本书第一章的时候，作者正好拜访他一朋友，那是要写责任感及相关话题，而一整下午，作者却茫无头绪。正在那时，一直不苟言笑的朋友的妻子却推开门，手里捧着一本小书，说自己在整理书的时候不知道为什么觉得也许这本书会对作者有用，而事后的结果是，那本书正是作者希望找的，一本很知名的作家关于责任感方面的书，这给了作者写作很大的帮助。&lt;/p&gt;
+&lt;p&gt;作者称之为serendipity，意外发现神奇事物的能力。这可以算得上是某种天赋了，有的人更容易发现生活中的serendipity，而另一些人却不甚敏感，但总的来说，我们都或多或少的体验到它的真实存在。&lt;/p&gt;
+&lt;p&gt;这难道不就是一种天赐的福么？也许我们真正需要的只是那一点点动机，一点点信念，有了它之后，坚定不移的朝前走，也许，真的，全世界都会联合起来帮助你。&lt;/p&gt;</content><category term="杂谈"></category><category term="生活"></category><category term="心理学"></category></entry></feed>

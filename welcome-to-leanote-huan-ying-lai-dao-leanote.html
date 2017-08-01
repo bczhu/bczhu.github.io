@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="chinese (simplified)">
+  <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+    <title>Kane's Blog</title>
+
+    <meta charset="utf-8" />
+    <link href="/feeds/study.atom.xml" type="application/atom+xml" rel="alternate" title="Kane's Blog Categories Atom Feed" />
+    <link rel="stylesheet" href="/theme/css/poole.css"/>
+    <link rel="stylesheet" href="/theme/css/syntax.css"/>
+    <link rel="stylesheet" href="/theme/css/lanyon.css"/>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+    <link rel="stylesheet" href="/theme/css/styles.css"/>
+
+
+
+    <meta name="tags" contents="Leanote" />
+
+  </head>
+
+  <body class="theme-base-08">
+<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <div class="profile">
+      <img src="/theme/img/profile.png"/>
+    </div>
+  </div>
+
+  <nav class="sidebar-nav">
+  <a class="sidebar-nav-item" href="/">All</a>
+
+      <a class="sidebar-nav-item" href="/category/life.html">Life</a>
+      <a class="sidebar-nav-item" href="/category/study.html">Study</a>
+
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+    <a href="https://twitter.com/">&copy; @</a> 2017
+    </p>
+    <p class="tiny-note">
+      <a class="muted" href="https://github.com/thomaswilley/pelicanyan">pelicanyan v0.1</a>
+    </p>
+  </div>
+</div>    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">Kane's Blog</a>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+<div class="posts">
+<div class="post">
+    <h1 class="post-title">
+      Welcome to Leanote! 欢迎来到Leanote!
+    </h1>
+    <span class="post-date">周二 01 八月 2017</span>
+
+    <h2>1. 排版</h2>
+<p><strong>粗体</strong> <em>斜体</em> </p>
+<p>~~这是一段错误的文本。~~</p>
+<p>引用:</p>
+<blockquote>
+<p>引用Leanote官方的话, 为什么要做Leanote, 原因是...</p>
+</blockquote>
+<p>有充列表:
+ 1. 支持Vim
+ 2. 支持Emacs</p>
+<p>无序列表:</p>
+<ul>
+<li>项目1</li>
+<li>项目2</li>
+</ul>
+<h2>2. 图片与链接</h2>
+<p>图片:
+<img alt="leanote" src="http://leanote.com/images/logo/leanote_icon_blue.png">
+链接:</p>
+<p><a href="http://leanote.leanote.com">这是去往Leanote官方博客的链接</a></p>
+<h2>3. 标题</h2>
+<p>以下是各级标题, 最多支持5级标题</p>
+<div class="highlight"><pre><span></span># h1
+## h2
+### h3
+#### h4
+##### h4
+###### h5
+</pre></div>
+
+
+<h2>4. 代码</h2>
+<p>示例:</p>
+<div class="highlight"><pre><span></span>function get(key) {
+    return m[key];
+}
+</pre></div>
+
+
+<p>代码高亮示例:</p>
+<div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm">* nth element in the fibonacci series.</span>
+<span class="cm">* @param n &gt;= 0</span>
+<span class="cm">* @return the nth element, &gt;= 0.</span>
+<span class="cm">*/</span>
+<span class="kd">function</span> <span class="nx">fib</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">b</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="kd">var</span> <span class="nx">tmp</span><span class="p">;</span>
+  <span class="k">while</span> <span class="p">(</span><span class="o">--</span><span class="nx">n</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">tmp</span> <span class="o">=</span> <span class="nx">a</span><span class="p">;</span>
+    <span class="nx">a</span> <span class="o">+=</span> <span class="nx">b</span><span class="p">;</span>
+    <span class="nx">b</span> <span class="o">=</span> <span class="nx">tmp</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">a</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="nx">fib</span><span class="p">(</span><span class="mi">10</span><span class="p">));</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Employee</span><span class="p">:</span>
+   <span class="n">empCount</span> <span class="o">=</span> <span class="mi">0</span>
+
+   <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">salary</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">salary</span> <span class="o">=</span> <span class="n">salary</span>
+        <span class="n">Employee</span><span class="o">.</span><span class="n">empCount</span> <span class="o">+=</span> <span class="mi">1</span>
+</pre></div>
+
+
+<h1>5. Markdown 扩展</h1>
+<p>Markdown 扩展支持:</p>
+<ul>
+<li>表格</li>
+<li>定义型列表</li>
+<li>Html 标签</li>
+<li>脚注</li>
+<li>目录</li>
+<li>时序图与流程图</li>
+<li>MathJax 公式</li>
+</ul>
+<h2>5.1 表格</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Computer</td>
+<td>\$1600</td>
+</tr>
+<tr>
+<td>Phone</td>
+<td>\$12</td>
+</tr>
+<tr>
+<td>Pipe</td>
+<td>\$1</td>
+</tr>
+</tbody>
+</table>
+<p>可以指定对齐方式, 如Item列左对齐, Value列右对齐, Qty列居中对齐</p>
+<table>
+<thead>
+<tr>
+<th align="left">Item</th>
+<th align="right">Value</th>
+<th align="center">Qty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Computer</td>
+<td align="right">\$1600</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="left">Phone</td>
+<td align="right">\$12</td>
+<td align="center">12</td>
+</tr>
+<tr>
+<td align="left">Pipe</td>
+<td align="right">\$1</td>
+<td align="center">234</td>
+</tr>
+</tbody>
+</table>
+<h2>5.2 定义型列表</h2>
+<dl>
+<dt>名词 1</dt>
+<dd>定义 1（左侧有一个可见的冒号和四个不可见的空格）</dd>
+<dt>代码块 2</dt>
+<dd>这是代码块的定义（左侧有一个可见的冒号和四个不可见的空格）<div class="highlight"><pre><span></span>代码块（左侧有八个不可见的空格）
+</pre></div>
+
+
+</dd>
+</dl>
+<h2>5.3 Html 标签</h2>
+<p>支持在 Markdown 语法中嵌套 Html 标签，譬如，你可以用 Html 写一个纵跨两行的表格：</p>
+<div class="highlight"><pre><span></span><span class="nt">&lt;table&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+        <span class="nt">&lt;th</span> <span class="na">rowspan=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>值班人员<span class="nt">&lt;/th&gt;</span>
+        <span class="nt">&lt;th&gt;</span>星期一<span class="nt">&lt;/th&gt;</span>
+        <span class="nt">&lt;th&gt;</span>星期二<span class="nt">&lt;/th&gt;</span>
+        <span class="nt">&lt;th&gt;</span>星期三<span class="nt">&lt;/th&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+        <span class="nt">&lt;td&gt;</span>李强<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>张明<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>王平<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;/table&gt;</span>
+</pre></div>
+
+
+<table>
+    <tr>
+        <th rowspan="2">值班人员</th>
+        <th>星期一</th>
+        <th>星期二</th>
+        <th>星期三</th>
+    </tr>
+    <tr>
+        <td>李强</td>
+        <td>张明</td>
+        <td>王平</td>
+    </tr>
+</table>
+
+<p><strong>提示</strong>, 如果想对图片的宽度和高度进行控制, 你也可以通过img标签, 如:</p>
+<p><img src="http://leanote.com/images/logo/leanote_icon_blue.png" width="50px" /></p>
+<h2>5.4 脚注</h2>
+<p>Leanote<sup id="fnref-footnote"><a class="footnote-ref" href="#fn-footnote">1</a></sup>来创建一个脚注</p>
+<h2>5.5 目录</h2>
+<p>通过 <code>[TOC]</code> 在文档中插入目录, 如:</p>
+<p>[TOC]</p>
+<h2>5.6 时序图与流程图</h2>
+<div class="highlight"><pre><span></span>Alice-&gt;Bob: Hello Bob, how are you?
+Note right of Bob: Bob thinks
+Bob--&gt;Alice: I am good thanks!
+</pre></div>
+
+
+<p>流程图:</p>
+<div class="highlight"><pre><span></span>st=&gt;start: Start
+e=&gt;end
+op=&gt;operation: My Operation
+cond=&gt;condition: Yes or No?
+
+st-&gt;op-&gt;cond
+cond(yes)-&gt;e
+cond(no)-&gt;op
+</pre></div>
+
+
+<blockquote>
+<p><strong>提示:</strong> 更多关于时序图与流程图的语法请参考:</p>
+<ul>
+<li><a href="http://bramp.github.io/js-sequence-diagrams/">时序图语法</a></li>
+<li><a href="http://adrai.github.io/flowchart.js">流程图语法</a></li>
+</ul>
+</blockquote>
+<h2>5.7 MathJax 公式</h2>
+<p>$ 表示行内公式： </p>
+<p>质能守恒方程可以用一个很简洁的方程式 <span class="math">\(E=mc^2\)</span> 来表达。</p>
+<p>$$ 表示整行公式：</p>
+<div class="math">$$\sum_{i=1}^n a_i=0$$</div>
+<div class="math">$$f(x_1,x_x,\ldots,x_n) = x_1^2 + x_2^2 + \cdots + x_n^2 $$</div>
+<div class="math">$$\sum^{j-1}_{k=0}{\widehat{\gamma}_{kj} z_k}$$</div>
+<p>更复杂的公式:
+</p>
+<div class="math">$$
+\begin{eqnarray}
+\vec\nabla \times (\vec\nabla f) &amp; = &amp; 0  \cdots\cdots梯度场必是无旋场\\
+\vec\nabla \cdot(\vec\nabla \times \vec F) &amp; = &amp; 0\cdots\cdots旋度场必是无散场\\
+\vec\nabla \cdot (\vec\nabla f) &amp; = &amp; {\vec\nabla}^2f\\
+\vec\nabla \times(\vec\nabla \times \vec F) &amp; = &amp; \vec\nabla(\vec\nabla \cdot \vec F) - {\vec\nabla}^2 \vec F\\
+\end{eqnarray}
+$$</div>
+<p>访问 <a href="http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference">MathJax</a> 参考更多使用方法。</p>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn-footnote">
+<p>Leanote是一款强大的开源云笔记产品.&#160;<a class="footnote-backref" href="#fnref-footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
+  </div>
+</div>
+      </div>
+
+      <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+      <script>
+        (function(document) {
+          var i = 0;
+          // snip empty header rows since markdown can't
+          var rows = document.querySelectorAll('tr');
+          for(i=0; i<rows.length; i++) {
+            var ths = rows[i].querySelectorAll('th');
+            var rowlen = rows[i].children.length;
+            if (ths.length > 0 && ths.length === rowlen) {
+              rows[i].remove();
+            }
+          }
+        })(document);
+      </script>
+
+      <script>
+        /* Lanyon & Poole are Copyright (c) 2014 Mark Otto. Adapted to Pelican 20141223 and extended a bit by @thomaswilley */
+        (function(document) {
+          var toggle = document.querySelector('.sidebar-toggle');
+          var sidebar = document.querySelector('#sidebar');
+          var checkbox = document.querySelector('#sidebar-checkbox');
+          document.addEventListener('click', function(e) {
+            var target = e.target;
+            if(!checkbox.checked ||
+            sidebar.contains(target) ||
+            (target === checkbox || target === toggle)) return;
+            checkbox.checked = false;
+            }, false);
+            })(document);
+      </script>
+     </div>
+  </body>
+</html>

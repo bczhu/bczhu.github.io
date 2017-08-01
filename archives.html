@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="chinese (simplified)">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+    <title>Kane's Blog</title>
+
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/theme/css/poole.css"/>
+    <link rel="stylesheet" href="/theme/css/syntax.css"/>
+    <link rel="stylesheet" href="/theme/css/lanyon.css"/>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+    <link rel="stylesheet" href="/theme/css/styles.css"/>
+  </head>
+
+  <body class="theme-base-08">
+<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <div class="profile">
+      <img src="/theme/img/profile.png"/>
+    </div>
+  </div>
+
+  <nav class="sidebar-nav">
+  <a class="sidebar-nav-item" href="/">All</a>
+
+      <a class="sidebar-nav-item" href="/category/life.html">Life</a>
+      <a class="sidebar-nav-item" href="/category/study.html">Study</a>
+
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+    <a href="https://twitter.com/">&copy; @</a> 2017
+    </p>
+    <p class="tiny-note">
+      <a class="muted" href="https://github.com/thomaswilley/pelicanyan">pelicanyan v0.1</a>
+    </p>
+  </div>
+</div>    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">Kane's Blog</a>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+<h1>Archives for Kane's Blog</h1>
+
+<dl>
+    <dt>周二 01 八月 2017</dt>
+    <dd><a href="/welcome-to-leanote-huan-ying-lai-dao-leanote.html">Welcome to Leanote! 欢迎来到Leanote!</a></dd>
+    <dt>周日 18 九月 2016</dt>
+    <dd><a href="/liang-hua-xiang-guan-zi-liao.html">量化相关资料</a></dd>
+    <dt>周三 18 五月 2016</dt>
+    <dd><a href="/sublimemarkdown-pei-zhi.html">sublime+markdown 配置</a></dd>
+    <dt>周日 15 五月 2016</dt>
+    <dd><a href="/ji-qi-xue-xi-xiang-guan-zi-liao.html">机器学习相关资料</a></dd>
+    <dt>周二 10 十一月 2015</dt>
+    <dd><a href="/lie-derivatives-and-covariant-derivatives.html">Lie derivatives and Covariant derivatives</a></dd>
+    <dt>周日 01 十一月 2015</dt>
+    <dd><a href="/noethers-theorem-and-ward-takahashi-identity.html">Noether's theorem and Ward-Takahashi identity</a></dd>
+    <dt>周一 03 十一月 2014</dt>
+    <dd><a href="/intuition-pumps-du-shu-bi-ji-chapter-58.html">《Intuition Pumps》读书笔记 Chapter 58</a></dd>
+    <dt>周二 01 四月 2014</dt>
+    <dd><a href="/miu.html">MIU</a></dd>
+    <dt>周四 25 七月 2013</dt>
+    <dd><a href="/the-god-grace-and-serendipity.html">The God, grace and serendipity</a></dd>
+</dl>
+      </div>
+
+      <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+      <script>
+        (function(document) {
+          var i = 0;
+          // snip empty header rows since markdown can't
+          var rows = document.querySelectorAll('tr');
+          for(i=0; i<rows.length; i++) {
+            var ths = rows[i].querySelectorAll('th');
+            var rowlen = rows[i].children.length;
+            if (ths.length > 0 && ths.length === rowlen) {
+              rows[i].remove();
+            }
+          }
+        })(document);
+      </script>
+
+      <script>
+        /* Lanyon & Poole are Copyright (c) 2014 Mark Otto. Adapted to Pelican 20141223 and extended a bit by @thomaswilley */
+        (function(document) {
+          var toggle = document.querySelector('.sidebar-toggle');
+          var sidebar = document.querySelector('#sidebar');
+          var checkbox = document.querySelector('#sidebar-checkbox');
+          document.addEventListener('click', function(e) {
+            var target = e.target;
+            if(!checkbox.checked ||
+            sidebar.contains(target) ||
+            (target === checkbox || target === toggle)) return;
+            checkbox.checked = false;
+            }, false);
+            })(document);
+      </script>
+     </div>
+  </body>
+</html>

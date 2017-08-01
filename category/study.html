@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="chinese (simplified)">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+    <title>Kane's Blog</title>
+
+    <meta charset="utf-8" />
+    <link href="/feeds/study.atom.xml" type="application/atom+xml" rel="alternate" title="Kane's Blog Categories Atom Feed" />
+    <link rel="stylesheet" href="/theme/css/poole.css"/>
+    <link rel="stylesheet" href="/theme/css/syntax.css"/>
+    <link rel="stylesheet" href="/theme/css/lanyon.css"/>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+    <link rel="stylesheet" href="/theme/css/styles.css"/>
+  </head>
+
+  <body class="theme-base-08">
+<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <div class="profile">
+      <img src="/theme/img/profile.png"/>
+    </div>
+  </div>
+
+  <nav class="sidebar-nav">
+  <a class="sidebar-nav-item" href="/">All</a>
+
+      <a class="sidebar-nav-item" href="/category/life.html">Life</a>
+      <a class="sidebar-nav-item" href="/category/study.html">Study</a>
+
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+    <a href="https://twitter.com/">&copy; @</a> 2017
+    </p>
+    <p class="tiny-note">
+      <a class="muted" href="https://github.com/thomaswilley/pelicanyan">pelicanyan v0.1</a>
+    </p>
+  </div>
+</div>    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">Kane's Blog</a>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+<div class="content-title">
+<h2>Study category</h2>
+</div>
+<div class="posts">
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/welcome-to-leanote-huan-ying-lai-dao-leanote.html" rel="bookmark" title="Permalink to Welcome to Leanote! 欢迎来到Leanote!">Welcome to Leanote! 欢迎来到Leanote!</a>
+    </h1>
+    <span class="post-date">周二 01 八月 2017</span>
+
+    <h2>1. 排版</h2>
+<p><strong>粗体</strong> <em>斜体</em> </p>
+<p>~~这是一段错误的文本。~~</p>
+<p>引用:</p>
+<blockquote>
+<p>引用Leanote官方的话, 为什么要做Leanote, 原因是...</p>
+</blockquote>
+<p>有充列表:
+ 1. 支持Vim
+ 2. 支持Emacs</p>
+<p>无序列表:</p>
+<ul>
+<li>项目1</li>
+<li>项目2</li>
+</ul>
+<h2>2. 图片与链接</h2>
+<p>图片:
+<img alt="leanote" src="http://leanote.com/images/logo/leanote_icon_blue.png">
+链接:</p>
+<p><a href="http://leanote.leanote.com">这是去往Leanote官方博客的链接</a></p>
+<h2>3. 标题</h2>
+<p>以下是各级标题, 最多支持5级标题</p>
+<div class="highlight"><pre><span></span># h1
+## h2
+### h3
+#### h4
+##### h4
+###### h5
+</pre></div>
+
+
+<h2>4. 代码</h2>
+<p>示例:</p>
+<div class="highlight"><pre><span></span>function get(key) {
+    return m[key];
+}
+</pre></div>
+
+
+<p>代码高亮示例:</p>
+<div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm">* nth element in the fibonacci series.</span>
+<span class="cm">* @param n &gt;= 0</span>
+<span class="cm">* @return the nth element, &gt;= 0.</span>
+<span class="cm">*/</span>
+<span class="kd">function</span> <span class="nx">fib</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">b</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="kd">var</span> <span class="nx">tmp</span><span class="p">;</span>
+  <span class="k">while</span> <span class="p">(</span><span class="o">--</span><span class="nx">n</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">tmp</span> <span class="o">=</span> <span class="nx">a</span><span class="p">;</span>
+    <span class="nx">a</span> <span class="o">+=</span> <span class="nx">b</span><span class="p">;</span>
+    <span class="nx">b</span> <span class="o">=</span> <span class="nx">tmp</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">a</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="nx">fib</span><span class="p">(</span><span class="mi">10</span><span class="p">));</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Employee</span><span class="p">:</span>
+   <span class="n">empCount</span> <span class="o">=</span> <span class="mi">0</span>
+
+   <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">salary</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">salary</span> <span class="o">=</span> <span class="n">salary</span>
+        <span class="n">Employee</span><span class="o">.</span><span class="n">empCount</span> <span class="o">+=</span> <span class="mi">1</span>
+</pre></div>
+
+
+<h1>5. Markdown 扩展</h1>
+<p>Markdown 扩展支持:</p>
+<ul>
+<li>表格</li>
+<li>定义型列表</li>
+<li>Html 标签</li>
+<li>脚注</li>
+<li>目录</li>
+<li>时序图与流程图</li>
+<li>MathJax 公式</li>
+</ul>
+<h2>5.1 表格</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Computer</td>
+<td>\$1600</td>
+</tr>
+<tr>
+<td>Phone</td>
+<td>\$12</td>
+</tr>
+<tr>
+<td>Pipe</td>
+<td>\$1</td>
+</tr>
+</tbody>
+</table>
+<p>可以指定对齐方式, 如Item列左对齐, Value列右对齐, Qty列居中对齐</p>
+<table>
+<thead>
+<tr>
+<th align="left">Item</th>
+<th align="right">Value</th>
+<th align="center">Qty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Computer</td>
+<td align="right">\$1600</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="left">Phone</td>
+<td align="right">\$12</td>
+<td align="center">12</td>
+</tr>
+<tr>
+<td align="left">Pipe</td>
+<td align="right">\$1</td>
+<td align="center">234</td>
+</tr>
+</tbody>
+</table>
+<h2>5.2 定义型列表</h2>
+<dl>
+<dt>名词 1</dt>
+<dd>定义 1（左侧有一个可见的冒号和四个不可见的空格）</dd>
+<dt>代码块 2</dt>
+<dd>这是代码块的定义（左侧有一个可见的冒号和四个不可见的空格）<div class="highlight"><pre><span></span>代码块（左侧有八个不可见的空格）
+</pre></div>
+
+
+</dd>
+</dl>
+<h2>5.3 Html 标签</h2>
+<p>支持在 Markdown 语法中嵌套 Html 标签，譬如，你可以用 Html 写一个纵跨两行的表格：</p>
+<div class="highlight"><pre><span></span><span class="nt">&lt;table&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+        <span class="nt">&lt;th</span> <span class="na">rowspan=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>值班人员<span class="nt">&lt;/th&gt;</span>
+        <span class="nt">&lt;th&gt;</span>星期一<span class="nt">&lt;/th&gt;</span>
+        <span class="nt">&lt;th&gt;</span>星期二<span class="nt">&lt;/th&gt;</span>
+        <span class="nt">&lt;th&gt;</span>星期三<span class="nt">&lt;/th&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+        <span class="nt">&lt;td&gt;</span>李强<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>张明<span class="nt">&lt;/td&gt;</span>
+        <span class="nt">&lt;td&gt;</span>王平<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;/table&gt;</span>
+</pre></div>
+
+
+<table>
+    <tr>
+        <th rowspan="2">值班人员</th>
+        <th>星期一</th>
+        <th>星期二</th>
+        <th>星期三</th>
+    </tr>
+    <tr>
+        <td>李强</td>
+        <td>张明</td>
+        <td>王平</td>
+    </tr>
+</table>
+
+<p><strong>提示</strong>, 如果想对图片的宽度和高度进行控制, 你也可以通过img标签, 如:</p>
+<p><img src="http://leanote.com/images/logo/leanote_icon_blue.png" width="50px" /></p>
+<h2>5.4 脚注</h2>
+<p>Leanote<sup id="fnref-footnote"><a class="footnote-ref" href="#fn-footnote">1</a></sup>来创建一个脚注</p>
+<h2>5.5 目录</h2>
+<p>通过 <code>[TOC]</code> 在文档中插入目录, 如:</p>
+<p>[TOC]</p>
+<h2>5.6 时序图与流程图</h2>
+<div class="highlight"><pre><span></span>Alice-&gt;Bob: Hello Bob, how are you?
+Note right of Bob: Bob thinks
+Bob--&gt;Alice: I am good thanks!
+</pre></div>
+
+
+<p>流程图:</p>
+<div class="highlight"><pre><span></span>st=&gt;start: Start
+e=&gt;end
+op=&gt;operation: My Operation
+cond=&gt;condition: Yes or No?
+
+st-&gt;op-&gt;cond
+cond(yes)-&gt;e
+cond(no)-&gt;op
+</pre></div>
+
+
+<blockquote>
+<p><strong>提示:</strong> 更多关于时序图与流程图的语法请参考:</p>
+<ul>
+<li><a href="http://bramp.github.io/js-sequence-diagrams/">时序图语法</a></li>
+<li><a href="http://adrai.github.io/flowchart.js">流程图语法</a></li>
+</ul>
+</blockquote>
+<h2>5.7 MathJax 公式</h2>
+<p>$ 表示行内公式： </p>
+<p>质能守恒方程可以用一个很简洁的方程式 <span class="math">\(E=mc^2\)</span> 来表达。</p>
+<p>$$ 表示整行公式：</p>
+<div class="math">$$\sum_{i=1}^n a_i=0$$</div>
+<div class="math">$$f(x_1,x_x,\ldots,x_n) = x_1^2 + x_2^2 + \cdots + x_n^2 $$</div>
+<div class="math">$$\sum^{j-1}_{k=0}{\widehat{\gamma}_{kj} z_k}$$</div>
+<p>更复杂的公式:
+</p>
+<div class="math">$$
+\begin{eqnarray}
+\vec\nabla \times (\vec\nabla f) &amp; = &amp; 0  \cdots\cdots梯度场必是无旋场\\
+\vec\nabla \cdot(\vec\nabla \times \vec F) &amp; = &amp; 0\cdots\cdots旋度场必是无散场\\
+\vec\nabla \cdot (\vec\nabla f) &amp; = &amp; {\vec\nabla}^2f\\
+\vec\nabla \times(\vec\nabla \times \vec F) &amp; = &amp; \vec\nabla(\vec\nabla \cdot \vec F) - {\vec\nabla}^2 \vec F\\
+\end{eqnarray}
+$$</div>
+<p>访问 <a href="http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference">MathJax</a> 参考更多使用方法。</p>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn-footnote">
+<p>Leanote是一款强大的开源云笔记产品.&#160;<a class="footnote-backref" href="#fnref-footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
+  </div>
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/liang-hua-xiang-guan-zi-liao.html" rel="bookmark" title="Permalink to 量化相关资料">量化相关资料</a>
+    </h1>
+    <span class="post-date">周日 18 九月 2016</span>
+
+    <h2>Online books</h2>
+<ol>
+<li><a href="https://www.otexts.org/fpp">Forecasting: principles and practice</a></li>
+</ol>
+<h2>Website</h2>
+<ol>
+<li><a href="http://robjhyndman.com/hyndsight/">HYNDSIGHT</a></li>
+</ol>
+  </div>
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/sublimemarkdown-pei-zhi.html" rel="bookmark" title="Permalink to sublime+markdown 配置">sublime+markdown 配置</a>
+    </h1>
+    <span class="post-date">周三 18 五月 2016</span>
+
+    <ol>
+<li>安装package control :https://packagecontrol.io/installation</li>
+<li><code>Ctrl+Shift+P</code> 选择Package control :install package, 输入MarkdownEditing，Markdown Preview。</li>
+<li>中文字体支持：安装package: <em>ConvertToUTF8</em>和<em>GBK Encoding Support</em>.</li>
+<li>安装风格：<strong>Monokai Extended</strong>
+设置：Preferences -&gt; Color Scheme -&gt; User -&gt; Monokai Extended</li>
+<li>Markdown preview设置：</li>
+</ol>
+<div class="highlight"><pre><span></span><span class="cm">/* Sets the parser used for building markdown to HTML. */</span><span class="w"> </span>
+<span class="s">&quot;parser&quot;</span><span class="err">:</span><span class="w"> </span><span class="s">&quot;markdown&quot;</span><span class="o">,</span><span class="w"> </span>
+<span class="cm">/* Enable or not mathjax support. */</span><span class="w"> </span>
+<span class="s">&quot;enable_mathjax&quot;</span><span class="err">:</span><span class="w"> </span>true<span class="o">,</span><span class="w"> </span>
+<span class="s">&quot;enable_highlight&quot;</span><span class="err">:</span><span class="w"> </span>true<span class="o">,</span><span class="w"> </span>
+<span class="cm">/* Remove github */</span><span class="w"> </span>
+<span class="s">&quot;enabled_parsers&quot;</span><span class="err">:</span><span class="w"> </span><span class="err">[</span><span class="s">&quot;markdown&quot;</span><span class="err">]</span><span class="w"></span>
+<span class="err">}</span><span class="w"></span>
+</pre></div>
+
+
+<ol>
+<li>浏览器预览（<strong>没成功</strong>）：Key-Bindings设置：
+<code>{"keys": ["alt+m"], "command": "markdown_preview", "args": {"target": "browser", "parser":"markdown"}}</code></li>
+</ol>
+  </div>
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/ji-qi-xue-xi-xiang-guan-zi-liao.html" rel="bookmark" title="Permalink to 机器学习相关资料">机器学习相关资料</a>
+    </h1>
+    <span class="post-date">周日 15 五月 2016</span>
+
+    <h2>课程</h2>
+<ol>
+<li><a href="http://blog.coursegraph.com/%E5%85%AC%E5%BC%80%E8%AF%BE%E5%8F%AF%E4%B8%8B%E8%BD%BD%E8%B5%84%E6%BA%90%E6%B1%87%E6%80%BB">公开课资源</a></li>
+<li>Stanford公开课：<a href="http://web.stanford.edu/class/cs246/handouts.html">Mining Massive Data Sets</a></li>
+<li>Berkeley cs: <a href="http://www.cs.berkeley.edu/~jordan/courses/260-spring10/">Bayesian Modeling and Inference</a></li>
+<li>Stanford <a href="http://cs231n.stanford.edu/">CS231n: Convolutional Neural Networks for Visual Recognition</a>,<a href="http://cs231n.github.io/">Notes</a></li>
+<li>课程：<a href="http://www.cs.toronto.edu/~rgrosse/csc321/calendar.html">Introduction to Neural Networks</a></li>
+<li><a href="http://www.cs.haifa.ac.il/~rita/uml_course/course_contents.html">Unsupervised Learning</a></li>
+<li><a href="http://varianceexplained.org/RData/">Rdata</a></li>
+</ol>
+<h2>网站</h2>
+<ol>
+<li>网站：<a href="https://www.52ml.net/">我爱机器学习</a>，<a href="http://www.52nlp.cn/">我爱自然语言处理</a>,<a href="http://www.52cs.org/">我爱计算机</a></li>
+<li><a href="http://playground.tensorflow.org/">Tensorflow playground</a></li>
+<li>基于遗传算法设计NN的<a href="http://www.otoro.net/ml/neat-playground">demo</a>,而且可以有不同的activation functions,更多内容见: <a href="http://www.otoro.net/ml/">http://www.otoro.net/ml/</a></li>
+<li><a href="http://deeplearning.net/">Deep learning</a>, <a href="http://deeplearning.net/tutorial/contents.html">tutorials</a></li>
+<li><a href="http://wiki.swarma.net/index.php/%E9%A6%96%E9%A1%B5">集智</a></li>
+<li>Stanford:<a href="http://ufldl.stanford.edu/wiki/index.php/Main_Page"><strong>Unsupervised Feature Learning and Deep Learning</strong></a></li>
+<li>Blog :<a href="http://www.zinkov.com/">http://www.zinkov.com/</a></li>
+</ol>
+<h2>网络书籍</h2>
+<ol>
+<li><a href="http://www.deeplearningbook.org/">Deep Learning Book</a></li>
+<li>书籍 <a href="http://neuralnetworksanddeeplearning.com/">http://neuralnetworksanddeeplearning.com/</a></li>
+</ol>
+  </div>
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/lie-derivatives-and-covariant-derivatives.html" rel="bookmark" title="Permalink to Lie derivatives and Covariant derivatives">Lie derivatives and Covariant derivatives</a>
+    </h1>
+    <span class="post-date">周二 10 十一月 2015</span>
+
+    <p>In differential geometry, two concepts are always quite difficult to distinguish, one is the <em>Lie derivatives</em>, the other is <em>Covariant derivatives</em>. In order to distinguish them, first, we give the definition of them.</p>
+<p>All <em>derivatives</em> want to characterize the aspects of different manifolds, and to compare the quantities between different points in a manifold, we have to set up a rule to map them into each other, different <em>derivatives</em> use different schema for comparison.</p>
+<p>The most simple one is <em>direct derivatives</em> defined by <span class="math">\(\partial_{\nu}X^{\mu}\)</span>, but in a manifold instead of Euclidean spaces, this quantity has no meaning because different points can have a very different local coordinates (or say different chart (U,<span class="math">\(\phi\)</span>)).</p>
+<p>So a natural extension is to use <strong>mapping</strong> to diffeomorphic two different points.</p>
+<h2>Lie derivatives</h2>
+<p>The main ingredient of <em>Lie derivatives</em> is the <strong>flow</strong> and the <strong>mapping</strong> defined by <em>the flow</em>.</p>
+<h3>Two basic concepts:</h3>
+<ul>
+<li>
+<p>Integral curve
+Let <span class="math">\(X\)</span> be a vector field in <span class="math">\(M\)</span>, an integral cruve <span class="math">\(x(t)\)</span> is a curve in <span class="math">\(M\)</span>, whose tangent vector at <span class="math">\(x(t)\)</span> is <span class="math">\(X|_x\)</span>. Given a chart <span class="math">\((U,\phi)\)</span>, this means
+<div class="math">$$\frac{dx^{\mu}}{dt}=X^{\mu}(x(t))$$</div>
+</p>
+</li>
+<li>
+<p>Flow
+A flow <span class="math">\(\sigma(t,x)\)</span> is a diffeomorphism from <span class="math">\(M\)</span> to <span class="math">\(M\)</span>, denoted by <span class="math">\(\sigma_t:M\to M\)</span>, which itself is an one-parameter group of transformations. Under the infinitesimal transformation <span class="math">\(\varepsilon\)</span>, we have
+<div class="math">$$\sigma_{\varepsilon}^{\mu}(x)=\sigma^{\mu}(\varepsilon,x)=x^{\mu}+\varepsilon X^{\mu}(x)$$</div>
+The vector field <span class="math">\(X\)</span> is called the <strong>infinitesimal generator</strong> of the transformation <span class="math">\(\sigma_t\)</span>.</p>
+</li>
+</ul>
+<h3>Lie derivatives</h3>
+<p>Let <span class="math">\(\sigma(t,x)\)</span> and <span class="math">\(\tau(t,x)\)</span> be two flows generated by the vector fields <span class="math">\(X\)</span> and <span class="math">\(Y\)</span>,
+</p>
+<div class="math">$$\frac{d\sigma^{\mu}(s,x)}{ds}=X^{\mu}(\sigma(s,x))\\
+\frac{d\tau^{\mu}(t,x)}{dt}=Y^{\mu}(\tau(t,x))$$</div>
+<p>
+Let us evaluate the change of the vector field <span class="math">\(Y\)</span> along <span class="math">\(\sigma(s,x)\)</span>.
+The <strong>Lie derivative</strong> of a vector <span class="math">\(Y\)</span> along the flow <span class="math">\(\sigma\)</span> of <span class="math">\(X\)</span> is defined by
+</p>
+<div class="math">$$\mathcal{L}_XY=\lim_{\varepsilon\to 0}\frac{1}{\varepsilon}[(\sigma_{-\varepsilon})_{}Y|_{\sigma_{\varepsilon}(x)}-Y|_x]$$</div>
+<p>
+First we have 
+</p>
+<div class="math">\begin{align}
+Y|_{\sigma_{\varepsilon}(x)}=&amp;Y^{\mu}(x^{\nu}+\varepsilon X^{\nu}(x))e_{\mu}|_{x+\varepsilon X}\\
+\approx&amp; Y^{\mu}(x)+\varepsilon X^{\nu}(x)\partial_{\nu}Y^{\mu}(x)e_{\mu}|_{x+\varepsilon X}
+\end{align}</div>
+<p>
+Then
+</p>
+<div class="math">\begin{align}
+{\sigma_{-\varepsilon}}_{}Y|_{\sigma_{\varepsilon}(x)}=&amp;(Y^{\mu}(x)+\varepsilon X^{\lambda}(x)\partial_{\lambda}Y^{\mu}(x))\partial\frac{x^{\nu}-\varepsilon X^{\nu}}{\partial x^{\mu}}e_{\nu}|_{x}\\
+\approx&amp; (Y^{\mu}+\varepsilon X^{\nu}\partial_{\nu}Y^{\mu}-\varepsilon Y^{\nu}\partial_{\nu}X^{\mu})e_{\mu}|_{x}
+\end{align}</div>
+<p>
+We get
+</p>
+<div class="math">$$\mathcal{L}_{X}Y=X^{\nu}\partial_{\nu}Y^{\mu}-Y^{\nu}\partial_{\nu}X^{\mu}=[X,Y]$$</div>
+<p>For the same routine, we get:
+</p>
+<div class="math">$$\mathcal{L}_{X}\omega=(X^{\nu}\partial_{\nu}\omega_{\mu}+\omega_{\nu}\partial_{\mu}X^{\nu})dx^{\mu}$$</div>
+<h3>Other derivations</h3>
+<ol>
+<li>
+<p>From <span class="math">\(x^{\mu}\to x^{\mu}+\epsilon X^{\mu}\)</span>, we have
+<div class="math">\begin{align}
+Y'^{\mu}(x')=&amp;\frac{\partial x'^{\mu}}{\partial x^{\nu}}Y^{\nu}(x)\\
+=&amp;Y^{\mu}(x)+\epsilon \partial_{\nu}X^{\mu}Y^{\nu}(x)
+\end{align}</div>
+Then we have
+<div class="math">\begin{align}
+Y'^{\mu}(x)=&amp;Y^{\mu}(x-\epsilon X)+\epsilon \partial_{\nu}X^{\mu}Y^{\nu}(x-\epsilon X)\\
+\approx &amp; Y^{\mu}(x)-\epsilon X^{\nu}\partial_{\nu}Y^{\mu}+\epsilon \partial_{\nu}X^{\mu}Y^{\nu}(x)
+\end{align}</div>
+Then
+<div class="math">$$\mathcal{L}_XY(x)=\lim_{\epsilon\to 0}\frac{Y^{\mu}(x)-Y'^{\mu}(x)}{\epsilon}=X^{\nu}\partial_{\nu}Y^{\mu}-Y^{\nu}\partial_{\nu}X^{\mu}$$</div>
+</p>
+</li>
+<li>
+<p>Or from <span class="math">\(Y^{'\mu}(x')=\frac{\partial{x^{'\mu}}}{\partial x^{\nu}}Y^{\nu}(x)\)</span>, then we exchange the coordinates <span class="math">\(x \leftrightarrow x'\)</span>, we have
+<div class="math">\begin{align}
+Y^{'\mu}(x)=&amp;\frac{\partial{x^{\mu}}}{\partial x^{'\nu}}Y^{\nu}(x')\\
+=&amp;(\delta_{\nu}^{\mu}-\epsilon\partial_{\nu}X^{\mu})(Y^{\nu}+\epsilon X^{\lambda}\partial_{\lambda}Y^{\nu})\\
+=&amp;Y^{\mu}+\epsilon X^{\nu}\partial_{\nu}Y^{\mu}-\epsilon Y^{\nu}\partial_{\nu}X^{\mu}
+\end{align}</div>
+Also gives
+<div class="math">$$\mathcal{L}_XY(x)=\lim_{\epsilon\to 0}\frac{Y'^{\mu}(x)-Y^{\mu}(x)}{\epsilon}=X^{\nu}\partial_{\nu}Y^{\mu}-Y^{\nu}\partial_{\nu}X^{\mu}$$</div>
+</p>
+</li>
+</ol>
+<h3>Meaning of Lie derivative</h3>
+<p>Geometrically, the <em>Lie bracket</em> shows the non-commutativity of two <em>flows</em>.
+For two flows <span class="math">\(\sigma(\epsilon,x)\)</span> and <span class="math">\(\tau(\delta,y)\)</span> generate by <span class="math">\(\bf{X}\)</span> and <span class="math">\(\bf{Y}\)</span>, we have:
+</p>
+<div class="math">\begin{align}
+\tau^{\mu}(\delta,\sigma(\epsilon,x)) &amp;\approx \tau^{\mu}(\delta,x^{\nu}+\epsilon X^{\nu}(x))\\
+&amp;\approx (x^{\mu}+\epsilon X^{\mu}(x))+\delta Y^{\mu}(x^{\nu}+\epsilon X^{\nu}(x))\\
+&amp;\approx x^{\mu}+\epsilon X^{\mu}(x)+\delta Y^{\mu}(x)+\epsilon\delta X^{\nu}(x)\partial_{\nu}Y^{\mu}(x)
+\end{align}</div>
+<p>
+And
+</p>
+<div class="math">$$\sigma^{\mu}(\epsilon,\tau(\delta,x)) \approx x^{\mu}+\epsilon X^{\mu}(x)+\delta Y^{\mu}(x)+\epsilon\delta Y^{\nu}(x)\partial_{\nu}X^{\mu}(x)$$</div>
+<p>
+Then we get
+</p>
+<div class="math">$$\tau^{\mu}(\delta,\sigma(\epsilon,x))-\sigma^{\mu}(\epsilon,\tau(\delta,x))=\epsilon\delta[X,Y]^{\mu}$$</div>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
+  </div>
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/noethers-theorem-and-ward-takahashi-identity.html" rel="bookmark" title="Permalink to Noether's theorem and Ward-Takahashi identity">Noether's theorem and Ward-Takahashi identity</a>
+    </h1>
+    <span class="post-date">周日 01 十一月 2015</span>
+
+    <p>In classical and quantum field theory, it is claimed that every continuous symmetry leads to a conservation law. But the derivation usually takes different form and quite confusing sometimes. Here, we deduce it in different scenarios and also in both classical field and quantum field theory.</p>
+<h2>1. In the passive point of view</h2>
+<p>This means the coordinates <span class="math">\(x\)</span> and <span class="math">\(x'\)</span> correspond to the same point but given by different frame, also the integral area <span class="math">\(\Omega\)</span> and <span class="math">\(\Omega'\)</span>.</p>
+<p><strong>Total derivative</strong>: here, we first clarify a very useful concept <em>total derivative</em>. For a general transformation: 
+</p>
+<div class="math">$$x_{\mu}\to x'_{\mu}=x_{\mu}+\delta x_{\mu}\\
+\phi_r(x)\to\phi_r'(x')=\phi_r(x)+\delta\phi_r(x)$$</div>
+<p>
+Then the <em>total derivative</em> defines by:
+</p>
+<div class="math">\begin{align}
+\tilde{\delta}\phi_r(x)&amp;\equiv\phi_r'(x)-\phi_r(x)=\phi_r'(x')-\phi_r(x)+\phi_r'(x)-\phi_r'(x')\\
+&amp;={\delta}\phi_r(x)-\delta x_{\mu}\partial^{\mu}\phi_r(x)
+\end{align}</div>
+<p>
+The <em>total derivative</em> has very good property:
+</p>
+<div class="math">$$\partial_{\mu}\tilde{\delta}\phi_r(x)=\tilde{\delta}\partial_{\mu}\phi_r(x)$$</div>
+<p>
+<strong>Notice</strong>: this <em>total derivative</em> is regardless of whether we are in <em>passive</em> or <em>active</em> viewpoint.
+Then:
+</p>
+<div class="math">$$\delta S=\int_{\Omega'}d^4x'\mathcal{L}'(x')-\int_{\Omega}d^4x\mathcal{L}(x)$$</div>
+<p>
+where <span class="math">\(\mathcal{L}'(x')\equiv \mathcal{L}(\phi'(x'),\partial'_{\mu}\phi'(x'),x')\)</span>.
+From <span class="math">\(\mathcal{L}'(x')=\mathcal{L}(x)+\delta\mathcal{L}(x)\)</span>, which gives
+</p>
+<div class="math">$$\delta S=\int_{\Omega'}d^4x'\delta\mathcal{L}(x)+\int_{\Omega'}d^4x'\mathcal{L}(x)-\int_{\Omega}d^4x\mathcal{L}(x)$$</div>
+<p>
+From <span class="math">\(d^4x'=(1+\partial_{\mu}\delta x^{\mu})d^4x\)</span>, we have
+</p>
+<div class="math">$$\int_{\Omega'}d^4x'\delta\mathcal{L}(x)\approx \int_{\Omega}d^4x\delta\mathcal{L}(x)$$</div>
+<p>
+Because <span class="math">\(\Omega'\)</span> is just the same as <span class="math">\(\Omega\)</span> and we omit the second and high order <span class="math">\(\delta\)</span>. Also:
+</p>
+<div class="math">$$\int_{\Omega'}d^4x'\mathcal{L}(x)-\int_{\Omega}d^4x\mathcal{L}(x)\\
+=\int_{\Omega}d^4x\partial_{\mu}\delta x^{\mu}\mathcal{L}(x)$$</div>
+<p>
+Then we have
+</p>
+<div class="math">$$\delta S=\int_{\Omega}d^4x\delta\mathcal{L}(x)+\int_{\Omega}d^4x\partial_{\mu}\delta x^{\mu}\mathcal{L}(x)\\
+=\int_{\Omega}d^4x\left(\tilde{\delta}\mathcal{L}(x)+\partial_{\mu}\mathcal{L}(x)\delta x^{\mu}\right)+\int_{\Omega}d^4x\partial_{\mu}\delta x^{\mu}\mathcal{L}(x)\\
+=\int_{\Omega}d^4x\left(\tilde{\delta}\mathcal{L}(x)+\partial_{\mu}(\delta x^{\mu}\mathcal{L}(x))\right)$$</div>
+<p>
+Then we can get
+</p>
+<div class="math">$$\tilde{\delta}\mathcal{L}(x)=\partial^{\mu}\left[\frac{\partial\mathcal{L}(x)}{\partial(\partial^{\mu}\phi_r)}\tilde{\delta}\phi_r(x)\right],$$</div>
+<p>
+where <em>Euler-Lagrangian formula</em> has been used.
+Define:
+</p>
+<div class="math">\begin{align}
+j_{\mu}(x)=&amp;\frac{\partial\mathcal{L}(x)}{\partial(\partial^{\mu}\phi_r)}\tilde{\delta}\phi_r(x)+\mathcal{L}(x)\delta x_{\mu}\\
+=&amp;\frac{\partial\mathcal{L}(x)}{\partial(\partial^{\mu}\phi_r)}{\delta}\phi_r(x)-\left(\frac{\partial\mathcal{L}(x)}{\partial(\partial^{\mu}\phi_r)}\partial_{\nu}\phi_r(x)-g_{\mu\nu}\mathcal{L}(x)\right)\delta x^{\nu},
+\end{align}</div>
+<p>
+we get
+</p>
+<div class="math">$$\partial^{\mu}j_{\mu}(x)=0$$</div>
+<p>
+Which is the <em>Noether's theorem</em>.</p>
+<h2>2. In the active point of view</h2>
+<p>What we want to do is to calculate the variantion 
+</p>
+<div class="math">$$\delta S=\int_{\Omega'}d^4x'\mathcal{L}(\phi_r'(x'),\partial_{\mu}'\phi_r'(x'))-\int_{\Omega}d^4x\mathcal{L}(\phi_r(x),\partial_{\mu}\phi_r(x))$$</div>
+<p>
+Since <span class="math">\(x'\)</span> is a dumb variant, we can recall it as <span class="math">\(x\)</span>, then
+</p>
+<div class="math">\begin{align}
+\delta S=&amp;\int_{\Omega'}d^4x\mathcal{L}(\phi_r'(x),\partial_{\mu}'\phi_r'(x))-\int_{\Omega}d^4x\mathcal{L}(\phi_r(x),\partial_{\mu}\phi_r(x))\\
+=&amp;\int_{\Omega}\tilde{\delta}\mathcal{L}(x)+\int_{\Omega'-\Omega}d^4x\mathcal{L}(\phi_r'(x),\partial_{\mu}'\phi_r'(x))\\
+=&amp;\int_{\Omega}\tilde{\delta}\mathcal{L}(x)+\int_{\partial\Omega}dS_{\lambda}\delta x^{\lambda}\mathcal{L}(\phi_r(x),\partial_{\mu}\phi_r(x))\\
+=&amp;\int_{\Omega}\partial_{\mu}(\frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\phi_r)}\tilde{\delta}\phi_r)+\int_{\Omega}dx^4\partial_{\lambda}(\delta x^{\lambda}\mathcal{L}(\phi_r(x),\partial_{\mu}\phi_r(x)))\\
+=&amp;\int_{\Omega}\partial_{\mu}(\frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\phi_r)}\tilde{\delta}\phi_r+\delta x^{\mu}\mathcal{L})
+\end{align}</div>
+<p>
+Where <span class="math">\(\tilde{\delta}\phi_r=\delta\phi_r-\partial_{\mu}\phi_r\delta x^{\mu}\)</span>.</p>
+<h2>3. Simpler one (akin to active point of view)</h2>
+<p>The coordinate is unchanged, but the field is changed to <span class="math">\(\phi(x')\)</span> for scalar field and <span class="math">\({T(\Lambda)^{-1}}_r^s\phi_s(x')\)</span> for vector field.
+</p>
+<div class="math">$$\delta\mathcal{L}=\partial_{\mu}(\frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\phi_r)}\delta\phi_r)=\mathcal{L}(x')-\mathcal{L}(x)$$</div>
+<p>
+For translation symmetry, <span class="math">\(x'=x+\epsilon\)</span>, <span class="math">\(\delta\phi_r=\phi_r(x')-\phi_r(x)=\epsilon^{\mu}\partial_{\mu}\phi_r\)</span>, which gives
+</p>
+<div class="math">$$\partial_{\mu}(\frac{\partial\mathcal{L}}{\partial(\partial^{\mu}\phi_r)}\partial_{\nu}\phi_r-g_{\mu\nu}\mathcal{L})=0$$</div>
+<p>
+For Lorentz transformation, we have <span class="math">\(x'=x+\delta\omega^{\mu}{}_{\nu}x^{\nu}\)</span>, </p>
+<div class="math">$$\delta\phi_r=T(\Lambda)^{-1}{}_r{}^s\phi_s(x')-\phi(x)=\delta\omega_{\mu\nu}(x^{\nu}\partial^{\mu}\phi_r+\frac{i}{2}(J^{\mu\nu})_r{}^s\phi_s)$$</div>
+<p>
+where <span class="math">\(T(\Lambda){}_r{}^s=\delta_r{}^s-\frac{i}{2}\delta_{\mu\nu}(J^{\mu\nu})_r{}^s\)</span>
+we get
+</p>
+<div class="math">$$\partial^{\mu}f_{\mu}=0$$</div>
+<p>
+with
+</p>
+<div class="math">$$f_{\mu}=\frac{1}{2}\delta\omega^{\nu\lambda}M_{\mu\nu\lambda}$$</div>
+<div class="math">$$M_{\mu\nu\lambda}=\Theta_{\mu\lambda}x_{\nu}-\Theta_{\mu\nu}x_{\lambda}+i\frac{\partial\mathcal{L}}{\partial(\partial^{\mu}\phi_r)}(J_{\nu\lambda})_r{}^s\phi_s$$</div>
+<p>
+where
+</p>
+<div class="math">$$\Theta_{\mu\nu}=\frac{\partial\mathcal{L}}{\partial(\partial^{\mu}\phi_r)}\partial_{\nu}\phi_r-g_{\mu\nu}\mathcal{L}$$</div>
+<p>
+<strong>Or another way around</strong>: <span class="math">\(\phi(x)\to T(\Lambda)\phi(\Lambda^{-1}x)\)</span></p>
+<h2>4. General argument</h2>
+<h2>5. Ward-Takahashi identity</h2>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
+  </div>
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/intuition-pumps-du-shu-bi-ji-chapter-58.html" rel="bookmark" title="Permalink to 《Intuition Pumps》读书笔记 Chapter 58">《Intuition Pumps》读书笔记 Chapter 58</a>
+    </h1>
+    <span class="post-date">周一 03 十一月 2014</span>
+
+    <p>这一节主要讲到qualia的含义的不明确性。文中先讲到了两个很有意思的认知神经病例：prosopagnosia 和 Capgras delusion.</p>
+<p>Prosopagnosia 指脸部失认症，患这种病症的病人的视觉系统正常，但却无法识别人脸。他们能够区分男女老幼，亚洲人或欧洲人，但是却无法区分性别相同年龄相仿的朋友们的脸。而更有意思的是，尽管认知层面他们无法识别人脸，但实际上，在某种意义上，他们却又可以识别人脸，甚至他们自己都没有意识到。当展示他们一张熟人照片，并要求从听到的几个候选名字中选出认为匹配的名字的时候，他们是随机选择的，但是，他们的皮肤电信号响应（galvanic skin response）（用于测量情绪起伏的）却特别强烈，当他们听到正确名字的时候。</p>
+<p>所以，在一个非常简化的模型中，可以认为大脑中有两套相互独立的人脸识别系统。在我们的例子中，受伤的意识系统，认为是高层次的位于视觉皮层的系统，无法帮助受试者识别人脸。但没有受伤的非意识系统，可认为是低层次的边缘系统，却会对人脸识别做出响应。</p>
+<p>与患者脸部失认症的病人相反，患有Capgras delusion的病人，会突然相信自己的爱人或亲人，是被秘密调换的冒名顶替的复制品。他们并没有精神病，只是像被植入了一个信念，使他们相信他们的爱人是假的。他们能够识别爱人的脸，所以意识系统没问题，有问题的是非意识的边缘系统，无法对对方做出应有的情绪反应。就像是某些东西缺失了，这种感受是如此的强烈，甚至完全颠覆意识系统的结论，最终使大脑坚信面前的爱人是假的。</p>
+<p>把上述情况往下推，作者设计了一个Intuition Pump，一个想象的被称为Clapgras的病人。他的症状很类似Capgras delusion，但比之更甚。</p>
+<p>Clapgras 过着一个很平常的生活，但某天醒来睁开眼之后，却发现整个世界都有点不对劲了，他的描述是“be confronted by a strangely disgusting world, familiar but also different in some way that defies description".他的视觉系统没问题，能分辨不同的颜色，能通过标准的Ishihara测验（石原氏色盲测验），但是对所有颜色的情绪反应都反过来了（he has undergone a profound inversion of all his emotional and attentional reactions to colors）。以前的一些让他喜欢的颜色组合，他会讨厌，而原来不喜欢的颜色组合，现在又感觉舒服了。</p>
+<p>我们可以很简单的解释说：她的颜色qualia被反过来了，而高层次的认知系统正常。（he's undergone a total color qualia inversion while leaving intact his merely high-level cognitive color talents.）那么他自己是否觉得自己的颜色qualia反过来了呢？如果把一个成熟的柠檬放在他眼前，他体验到的是客观的内禀的（intrinsic subjective)黄色还是客观的内禀的蓝色呢？因为他的视觉中枢没有损伤，所以他也许会说自己当然体验到的是黄色，但是我们又怎么知道他知道自己说的是什么意思呢？毕竟在很大意义上，他大脑对柠檬的感觉是”蓝“的，除了在认知层面，他把柠檬定义为黄色。（这一论点可以简单的用一个反问句概况：你体验到的黄色和我体验到的黄色一样吗？）</p>
+<p>qualia的原始定义是：a property as it is experienced as distinct from any source it might have in a physical object. 但正如脸部失认症患者所遇到的，他们认得(direct acquaintance)他们看到的熟悉的脸，在"visual qualia"层面，但是他们却无法把那些脸作为体验到的qualia而用于识别(recognize)他们。所以也许qualia并不是我们用于识别颜色的实验基础，或者说qualia本身的定义就有不明确性。</p>
+  </div>
+</div>
+<!--// updated -->
+<div class="pagination">
+        <span class="pagination-item newer">newer</span>
+        <span class="pagination-item older">older</span>
+</div>
+      </div>
+
+      <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+      <script>
+        (function(document) {
+          var i = 0;
+          // snip empty header rows since markdown can't
+          var rows = document.querySelectorAll('tr');
+          for(i=0; i<rows.length; i++) {
+            var ths = rows[i].querySelectorAll('th');
+            var rowlen = rows[i].children.length;
+            if (ths.length > 0 && ths.length === rowlen) {
+              rows[i].remove();
+            }
+          }
+        })(document);
+      </script>
+
+      <script>
+        /* Lanyon & Poole are Copyright (c) 2014 Mark Otto. Adapted to Pelican 20141223 and extended a bit by @thomaswilley */
+        (function(document) {
+          var toggle = document.querySelector('.sidebar-toggle');
+          var sidebar = document.querySelector('#sidebar');
+          var checkbox = document.querySelector('#sidebar-checkbox');
+          document.addEventListener('click', function(e) {
+            var target = e.target;
+            if(!checkbox.checked ||
+            sidebar.contains(target) ||
+            (target === checkbox || target === toggle)) return;
+            checkbox.checked = false;
+            }, false);
+            })(document);
+      </script>
+     </div>
+  </body>
+</html>
