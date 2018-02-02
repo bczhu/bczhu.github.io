@@ -3,7 +3,7 @@
 &lt;p&gt;可能你会觉得无从下手，因为相像有无数可能性，可以是15或者17，因为数值相近；可以是96或者4，因为是16的倍数或者都是偶数；还可以是2,4,16,32，因为都是2的幂次。那接着告诉你，除了16之外，还有8,2,64也在同一组，那么你觉得下一个可能的数是什么？我想很多人会由此推断出要找的数是2的幂次；而如果说23,19,20和16是同一组呢，那么可能会推断是想找数值相近的数。&lt;/p&gt;
 &lt;p&gt;咋一看，这很显然。但细想，却会感到很玄妙。在很多情况下，只给了一个或少数几个例子，而且仅仅是正面例子，我们便可以从中学习、推断和做分类，这是一项神奇的能力，至少目前的机器学习算法还没有人类做得好。我们的大脑是怎么做到这一点的呢，这还要从Bayes，哦，不，Sheldon说起。&lt;/p&gt;
 &lt;h3&gt;从Sheldon到Bayes定理&lt;/h3&gt;
-&lt;p&gt;&lt;img alt="Sheldon" src="/images/bayesian.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Sheldon" src="/images/bayesian.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;很多人都喜欢看《生活大爆炸》，欣赏里面Sheldon的绝顶聪明，上面的图片就出自《生活大爆炸》第四季第二集。里面的Sheldon非常担心，害怕自己不能活到技术“奇点 …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kane</dc:creator><pubDate>Fri, 02 Feb 2018 00:00:00 +0800</pubDate><guid isPermaLink="false">tag:None,2018-02-02:/bei-xie-si-da-nao.html</guid><category>人工智能</category><category>心理学</category><category>认知科学</category></item><item><title>致易消逝之人</title><link>/zhi-yi-xiao-shi-zhi-ren.html</link><description>&lt;p&gt;&lt;img alt="" src="/images/lonely.jpg"&gt;
 周末，雨天，在家。想看看最新一季的《夏目友人帐》有没有更新，发现已经完结，而最后一集标题就是“致易消逝之人”。&lt;/p&gt;
 &lt;p&gt;这一季的夏目像是比以往更寂寞些。最后一集讲的是两个叫中级的妖怪想起悬崖上的白雾花开了，就叫上夏目一起去赏花。花期很短，花海漂亮极了，但回来后，夏目着凉发烧不退。夏目的同学们都很担心，一起去为夏目求平安符，而中级也觉得夏目生病是自己的缘故，便去大角大人那求退烧草。历经千辛万苦求来退烧草给夏目服下，却被告知退烧草对人类无效，伤心不已。但夏目还是好起来了。看似平淡的故事，却寂寞无边。&lt;/p&gt;
