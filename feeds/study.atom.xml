@@ -1,5 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Kane's Blog - Study</title><link href="/" rel="alternate"></link><link href="/feeds/study.atom.xml" rel="self"></link><id>/</id><updated>2016-09-18T00:00:00+08:00</updated><entry><title>量化相关资料</title><link href="/liang-hua-xiang-guan-zi-liao.html" rel="alternate"></link><published>2016-09-18T00:00:00+08:00</published><updated>2016-09-18T00:00:00+08:00</updated><author><name>Kane</name></author><id>tag:None,2016-09-18:/liang-hua-xiang-guan-zi-liao.html</id><summary type="html">&lt;h2&gt;Online books&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Kane's Blog - Study</title><link href="/" rel="alternate"></link><link href="/feeds/study.atom.xml" rel="self"></link><id>/</id><updated>2018-02-02T00:00:00+08:00</updated><entry><title>贝叶斯大脑</title><link href="/bei-xie-si-da-nao.html" rel="alternate"></link><published>2018-02-02T00:00:00+08:00</published><updated>2018-02-02T00:00:00+08:00</updated><author><name>Kane</name></author><id>tag:None,2018-02-02:/bei-xie-si-da-nao.html</id><summary type="html">&lt;p&gt;如果要从1到100里面猜一个和16最像的数，你会猜什么？&lt;/p&gt;
+&lt;p&gt;可能你会觉得无从下手，因为相像有无数可能性，可以是15或者17，因为数值相近；可以是96或者4，因为是16的倍数或者都是偶数；还可以是2,4,16,32，因为都是2的幂次。那接着告诉你，除了16之外，还有8,2,64也在同一组，那么你觉得下一个可能的数是什么？我想很多人会由此推断出要找的数是2的幂次；而如果说23,19,20和16是同一组呢，那么可能会推断是想找数值相近的数。&lt;/p&gt;
+&lt;p&gt;咋一看，这很显然。但细想，却会感到很玄妙。在很多情况下，只给了一个或少数几个例子，而且仅仅是正面例子，我们便可以从中学习、推断和做分类，这是一项神奇的能力，至少目前的机器学习算法还没有人类做得好。我们的大脑是怎么做到这一点的呢，这还要从Bayes，哦，不，Sheldon说起。&lt;/p&gt;
+&lt;h3&gt;从Sheldon到Bayes定理&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="Sheldon" src="/images/bayesian.png"&gt;&lt;/p&gt;
+&lt;p&gt;很多人都喜欢看《生活大爆炸》，欣赏里面Sheldon的绝顶聪明，上面的图片就出自《生活大爆炸》第四季第二集。里面的Sheldon非常担心，害怕自己不能活到技术“奇点 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;如果要从1到100里面猜一个和16最像的数，你会猜什么？&lt;/p&gt;
+&lt;p&gt;可能你会觉得无从下手，因为相像有无数可能性，可以是15或者17，因为数值相近；可以是96或者4，因为是16的倍数或者都是偶数；还可以是2,4,16,32，因为都是2的幂次。那接着告诉你，除了16之外，还有8,2,64也在同一组，那么你觉得下一个可能的数是什么？我想很多人会由此推断出要找的数是2的幂次；而如果说23,19,20和16是同一组呢，那么可能会推断是想找数值相近的数。&lt;/p&gt;
+&lt;p&gt;咋一看，这很显然。但细想，却会感到很玄妙。在很多情况下，只给了一个或少数几个例子，而且仅仅是正面例子，我们便可以从中学习、推断和做分类，这是一项神奇的能力，至少目前的机器学习算法还没有人类做得好。我们的大脑是怎么做到这一点的呢，这还要从Bayes，哦，不，Sheldon说起。&lt;/p&gt;
+&lt;h3&gt;从Sheldon到Bayes定理&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="Sheldon" src="/images/bayesian.png"&gt;&lt;/p&gt;
+&lt;p&gt;很多人都喜欢看《生活大爆炸》，欣赏里面Sheldon的绝顶聪明，上面的图片就出自《生活大爆炸》第四季第二集。里面的Sheldon非常担心，害怕自己不能活到技术“奇点”的出现，也就无法通过意识上传获得永生。他根据家族成员的寿命和疾病史等，预期自己还有六十年可以活。他是怎么做到的呢？用的就是黑板上的贝叶斯定理，也是今天要讲的主题。&lt;/p&gt;
+&lt;p&gt;贝叶斯是18世纪英国的一位统计学家，他的生平事迹这里就不赘述，只需要知道他发现了这一定理的一种特别情况，后人因此用他名字给这一定理命名。这一定理初看起来是如此的显然和稀松平常，以致于初次遇见可能会忽视它。而细究之下，又会发现，它的内涵是如此丰富，不仅仅改变了我们对概率论的看法，并且我们的思维和决策本身也是基于其基础之上的，就像前面所讲的例子。&lt;/p&gt;
+&lt;p&gt;在概率论中，设两个事件发生的概率分别是&lt;span class="math"&gt;\(P(A)\)&lt;/span&gt;和&lt;span class="math"&gt;\(P(B)\)&lt;/span&gt;，那么他们同时发生的概率&lt;span class="math"&gt;\(P(A,B)\)&lt;/span&gt;可以用两种方式计算，既可以表述为事件A发生的概率&lt;span class="math"&gt;\(P(A)\)&lt;/span&gt;乘以事件A发生时事件B也发生的概率（条件概率）&lt;span class="math"&gt;\(P(B|A)\)&lt;/span&gt;，也可以表述为事件B发生的概率&lt;span class="math"&gt;\(P(B)\)&lt;/span&gt;乘以事件B发生时事件A也发生的概率&lt;span class="math"&gt;\(P(A|B)\)&lt;/span&gt;，公式表达如下：&lt;/p&gt;
+&lt;div class="math"&gt;$$P(A,B)=P(A)P(B|A)=P(B)P(A|B)$$&lt;/div&gt;
+&lt;p&gt;这就是贝叶斯定理的全部。很简单而且显然，对不对。只不过为了更好的理解其中的含义，我们把上述公式变换成它的标准形式：&lt;/p&gt;
+&lt;div class="math"&gt;$$P(B|A)=\frac{P(A|B)P(B)}{P(A)}\propto P(A|B)P(B)$$&lt;/div&gt;
+&lt;p&gt;通常情况下，B表示某一论断，例如“太阳每天从东方升起”，&lt;span class="math"&gt;\(P(B)\)&lt;/span&gt;表示最初我们对这一论断的信念，称为先验概率prior。A表示对这一论断我们收集的证据，例如，今天太阳从东方升起。&lt;span class="math"&gt;\(P(A|B)\)&lt;/span&gt;表示假如论断成立，出现这一证据的可能性，称为似然概率likelihood。那么我们便可以根据上述公式对信念进行更新，从先验概率&lt;span class="math"&gt;\(P(B)\)&lt;/span&gt;变到后验概率posterior &lt;span class="math"&gt;\(P(B|A)\)&lt;/span&gt;。&lt;/p&gt;
+&lt;p&gt;这里很重要的一点是，和我们平常所使用的概率方式不同，这里，一开始我们并没有假定太阳每天从东方升起一定正确，而是万事看证据，根据证据来修正我们对一件事物的看法。这一范式的改变发展出了概率论的贝叶斯学派，和传统的频率学派对概率论的解释形成对立，争论至今。&lt;/p&gt;
+&lt;p&gt;由此说开去，我们发现，不管是科学理论的建立还是发明创造，很多时候都是一条漫长曲折的寻找证据，并从证据中逐步抽象，建立起理论的道路。但在理论建立完备后，常常讲解的方式却是另外一种，高屋建瓴的、抽象的、预设的前提假设出发，一步步小心求证，最后得到结论，这一方式发挥到极致的学科便是数学。后一种方法我们称之为演绎推理deduction，而前一种更多的是归纳推理induction。对归纳推理的炉火纯青的应用，正是人类学习的很大一个优势。&lt;/p&gt;
+&lt;h3&gt;认知的贝叶斯模型&lt;/h3&gt;
+&lt;p&gt;回到开头提到的猜数字的游戏，有了贝叶斯定理的武装，我们便能更加理解在这一任务中，我们大脑到底发生了什么。这一例子出自Tenenbaum的博士论文，并被Murphy在《机器学习》&lt;sup id="fnref-1"&gt;&lt;a class="footnote-ref" href="#fn-1"&gt;1&lt;/a&gt;&lt;/sup&gt;一书中使用，为了解释，我们截取Murphy书中的两张图：&lt;/p&gt;
+&lt;p&gt;&lt;img alt="numGame" src="/images/post.png"&gt;&lt;/p&gt;
+&lt;p&gt;只给出数字16，为了猜测下一数字，我们会先做各种模型假设，例如上图中给出的那些。根据贝叶斯公式，每一种假设，我们都会有一个先验概率&lt;span class="math"&gt;\(P(h_i)\)&lt;/span&gt;，见最左边的图。它表示我们对这一假设的信念大小，例如把数字分成奇数偶数比较常见，于是我们把相应模型的先验概率设得比较大，而对于“都是2的幂次但排除32”这样的规则，我们会觉得很不“自然”，相应的会给予很小的概率。对模型的偏好来自于我们的先验知识，在两个一样解释力的模型中，我们会偏好更简单的模型，这就是经典的Occam剃刀原则。&lt;/p&gt;
+&lt;p&gt;同样的，我们还需要知道对每一个既定假设，出现数字16的概率&lt;span class="math"&gt;\(P(O|h_i)\)&lt;/span&gt;，在我们的例子中，设假设&lt;span class="math"&gt;\(h_i\)&lt;/span&gt;允许出现的结果有&lt;span class="math"&gt;\(|h_i|\)&lt;/span&gt;种，那么每种结果出现的可能性便是：&lt;/p&gt;
+&lt;div class="math"&gt;$$P(O|h_i)=\frac{1}{|h_i|}$$&lt;/div&gt;
+&lt;p&gt;每种假设的结果见中间的图。而最终对每种假设的信念便是两者的乘积，既要考虑到先验假设，也要考虑到似然概率。正如右边图中所显示的，对于”都是偶数“这样的假设，尽管先验概率比较大，但因为1到100间的偶数太多，出现16的概率仅1/50，如果恰恰出现了，我们会觉得是“惊人的巧合”，而不太会相信它是真的。这对应着贝叶斯版的Occam剃刀，在机器学习中，它化身为正则化项以防止模型过拟合。&lt;/p&gt;
+&lt;p&gt;这样，我们就有了知道数字16后各模型的后验概率&lt;span class="math"&gt;\(P(h_i|O)\)&lt;/span&gt;,从中我们就可以选择概率最大的一个作为最大似然估计，图中，我们可以看到选出的模型是“都是4的幂次”。如果有更多的证据，模型便会快速收敛至真实情况。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="numGame" src="/images/numGame.png"&gt;&lt;/p&gt;
+&lt;p&gt;那么我们又是如何猜测下一个数字x的呢？我们已经有了每个模型的后验概率，下一个数字是x的概率就可以表示为每个模型的后验概率和相应模型出现x的概率的乘积的求和，俗称贝叶斯模型平均。表示为：&lt;/p&gt;
+&lt;div class="math"&gt;$$P(x|D)=\sum_iP(x|h_i)P(h_i|D)$$&lt;/div&gt;
+&lt;p&gt;上面图中各条线上的点便表示各模型假设允许出现的结果，而右侧的曲线表示各模型的后验概率，综合起来，就会得到图中上部所示的x的概率分布。可以看到，与我们料想的非常一致。&lt;/p&gt;
+&lt;p&gt;我们再看大脑推断中用到贝叶斯的两个例子。第一个例子同样来自Tenenbaum[^2]的论文，说的不仅仅是我们如何学习单个概念，还说明了我们是如何将概念对应到事物的不同范畴的。当指着一张标记为fep的达尔马提亚狗图片，来猜测fep的含义时，我们既可以认为fep表示上位范畴的动物，表示本体范畴的狗，也可以是表示下位范畴的达尔马提亚狗。而我们会倾向于推断fep的意思是狗。这是由本体范畴偏差（prior)造成的，因为我们日常处理事物大多都是在本位范畴，这也是为什么本位范畴的中英文单词大多非常简单并且长度很短。但当给了三张达尔马提亚狗的图片，而且每张都标记为fep的时候，我们却更可能推断fep意思是达尔马提亚狗而不是所有的狗。因为直观上来讲，如果fep表示的是所有的狗，但随机抽取的三个样本都是达尔马提亚狗，那将是“惊人的巧合”。&lt;/p&gt;
+&lt;p&gt;第二个例子来自刘未鹏的《暗时间》，里面提到了一个自然语言的二义性例子。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;the girl saw the boy with a telescope.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;对于上面这句话，我们既可以理解为那个女孩拿着望远镜看那个男孩，也可以理解为那个女孩看到那个拿着望远镜的男孩。那么为什么通常情况下，我们会想当然的理解为第一个意思而消除歧义？从语法结构上讲，两种结构都是成立的，在这里体现为先验概率&lt;span class="math"&gt;\(P(h)\)&lt;/span&gt;大致一样,但是&lt;span class="math"&gt;\(P(O|h)\)&lt;/span&gt;却很不一样。如果是第二种情况，那么为何偏偏那个男孩拿的是一个望远镜，而不是一本书一只苹果呢？有很多不同的可能性，恰巧是望远镜的可能是非常小的。但是如果用第一种语义理解就不一样了，女孩通过某种东西看男孩，那么，是望远镜的概率就比较大。&lt;/p&gt;
+&lt;p&gt;在很多情况下，贝叶斯原理很好用，我们大脑也用它做很多事。但另一方面，它也是认知偏差的孵化池。&lt;/p&gt;
+&lt;h3&gt;认知偏差&lt;/h3&gt;
+&lt;p&gt;在《机器人叛乱》一书中，斯坦诺维奇讲到了认知心理学文献中的琳达问题：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;琳达今年31岁，单身、率真、非常聪明。她的专业是哲学。作为一个学生，她格外关心歧视和社会公正问题，也曾参加过反核示威游行。请根据可能性对下面的陈述进行评价，1代表可能性最高，8代表可能性最低。&lt;/p&gt;
+&lt;p&gt;a. 琳达是一名小学老师。&lt;/p&gt;
+&lt;p&gt;b. 琳达在书店工作，上瑜伽课。&lt;/p&gt;
+&lt;p&gt;c. 琳达积极参加女权运动。&lt;/p&gt;
+&lt;p&gt;d. 琳达是一名精神病学的社工。&lt;/p&gt;
+&lt;p&gt;e. 琳达是妇女选民联盟的一员。&lt;/p&gt;
+&lt;p&gt;f. 琳达是一名银行出纳。&lt;/p&gt;
+&lt;p&gt;g. 琳达是一名保险销售员。&lt;/p&gt;
+&lt;p&gt;h. 琳达是一名银行出纳，积极参加女权运动。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;因为选项h是选项c和f的组合，所以从概率来看，肯定比两者来得小，但是研究表明，有85%的参与者出现了“组合偏差”，他们认为选项h比f的可能性更高。&lt;/p&gt;
+&lt;p&gt;这可以看成是混淆了似然概率与后验概率的区别。本来需要计算后验概率&lt;span class="math"&gt;\(P(h|O)\)&lt;/span&gt;，却计算了似然函数&lt;span class="math"&gt;\(P(O|h)\)&lt;/span&gt;，或者说本来需要用induction的地方却错误的使用了deduction。因为按照似然函数的思路，相比于“琳达是一名银行出纳”的论断，“琳达是一名银行出纳，并且积极参加女权运动”的论断，更可能得到琳达关心歧视和社会公正问题等具体描述。而没有注意到，对于后验概率，还需要关注先验概率prior，而f选项的prior明显比h大得多。&lt;/p&gt;
+&lt;p&gt;类似的认知谬误比比皆是，我们可以再看赌徒谬误的例子，里面混淆了前提假设和后验概率。&lt;/p&gt;
+&lt;p&gt;赌徒谬误&lt;sup id="fnref-3"&gt;&lt;a class="footnote-ref" href="#fn-3"&gt;3&lt;/a&gt;&lt;/sup&gt;说的是：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;抛一枚公平的硬币，连续出现越多次正面朝上，下次抛出正面的机率就越小，抛出反面的机率就越大。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;把这个谬误和热手谬误&lt;sup id="fnref-4"&gt;&lt;a class="footnote-ref" href="#fn-4"&gt;4&lt;/a&gt;&lt;/sup&gt;及选择性记忆相结合，就不难理解为何赌徒永远赢不了。理性的分析容易看到，每次抛硬币都是相互独立事件，前面的结果不会对之后的结果产生影响。而我们又有了前提假设：硬币是无偏的。所以不管哪次抛掷硬币，出现正反的可能性都是1/2。&lt;/p&gt;
+&lt;p&gt;更精确的，我们可以用数学语言描述。假设硬币出现正面朝上的概率为&lt;span class="math"&gt;\(h\)&lt;/span&gt;,已抛掷4次，每次都是正面朝上，这一事实表述为&lt;span class="math"&gt;\(O\)&lt;/span&gt;. 硬币无偏，满足&lt;span class="math"&gt;\(P(h=0.5)=1\)&lt;/span&gt;,则下一次出现正面朝上的概率为&lt;span class="math"&gt;\(P(u,O|h=0.5)=0.5\)&lt;/span&gt;，出现反面朝上的概率也是&lt;span class="math"&gt;\(P(d,O|h=0.5)=0.5\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;但是，赌徒错误的使用了硬币无偏的结论，没有把它看成是前提假设，而看成是证据之后的推断，也就是后验概率。因为之前四次的正面朝上已经让硬币正面朝上的概率偏向于&lt;span class="math"&gt;\(E(h)&amp;gt;0.5\)&lt;/span&gt;,为了维持硬币无偏的信念，那么我们期望的是下次的抛掷能使&lt;span class="math"&gt;\(E(h)\)&lt;/span&gt;偏回来一点。&lt;/p&gt;
+&lt;p&gt;具体的，我们假设h的先验分布是均匀的（当然这里只是为了方便，用其他的分布不影响结论），那么抛掷四次正面朝上，使我们对h的概率预期变为：&lt;/p&gt;
+&lt;div class="math"&gt;$$P(h|O)\propto P(O|h)P(h)\propto h^4$$&lt;/div&gt;
+&lt;p&gt;可以得到期望&lt;span class="math"&gt;\(E(h|O)=5/6\)&lt;/span&gt;。和设想的一样，经过四次正面朝上后，我们的证据偏向于硬币是&lt;span class="math"&gt;\(h&amp;gt;0.5\)&lt;/span&gt;的。然后我们计算，下一次抛掷结果分别为正面朝上&lt;span class="math"&gt;\(u\)&lt;/span&gt;和反面朝上&lt;span class="math"&gt;\(d\)&lt;/span&gt;，h后验概率的期望。具体的：&lt;/p&gt;
+&lt;div class="math"&gt;$$P(h|u,O)\propto P(u|h)P(h|O)\propto P(u,O|h)P(h)=6h^5$$&lt;/div&gt;
+&lt;div class="math"&gt;$$P(h|d,O)\propto P(d|h)P(h|O)\propto P(d,O|h)P(h)=30h^4(1-h)$$&lt;/div&gt;
+&lt;p&gt;由此，计算可得&lt;span class="math"&gt;\(E(h|u,O)=6/7\)&lt;/span&gt;,而&lt;span class="math"&gt;\(E(h|d,O)=5/7\)&lt;/span&gt;.可以看到，确实下一次抛掷如果反面朝上便可以增强我们对硬币无偏的信念。不仅如此，我们还可以发现&lt;span class="math"&gt;\(E(h|O)\)&lt;/span&gt;介于两者之间。&lt;/p&gt;
+&lt;h3&gt;总结&lt;/h3&gt;
+&lt;p&gt;我歌月徘徊，我舞影零乱。我们的贝叶斯大脑以并行处理的方式快速对外界进行响应。这一方面让我们可以在稀疏的、少量的、只有正面的例子中快速学习，构建各种概念。但同时，也得警惕这种启发式的学习可能导致的各种认知谬误。&lt;/p&gt;
+&lt;div class="footnote"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id="fn-1"&gt;
+&lt;p&gt;Murphy, K. P. (2012). &lt;em&gt;Machine Learning: A Probabilistic Perspective&lt;/em&gt; (1 edition). Cambridge, MA: The MIT Press.&amp;#160;&lt;a class="footnote-backref" href="#fnref-1" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn- 2"&gt;
+&lt;p&gt;Xu, F., &amp;amp; Tenenbaum, J. B. (2007). Word learning as Bayesian inference. &lt;em&gt;Psychological Review&lt;/em&gt;, &lt;em&gt;114&lt;/em&gt;(2), 245.&amp;#160;&lt;a class="footnote-backref" href="#fnref- 2" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn-3"&gt;
+&lt;p&gt;&lt;a href="https://zh.wikipedia.org/wiki/%E8%B3%AD%E5%BE%92%E8%AC%AC%E8%AA%A4"&gt;维基百科：赌徒谬误&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref-3" title="Jump back to footnote 3 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn-4"&gt;
+&lt;p&gt;热手谬误认为某事多次发生则未来发生的机率会较大，见维基百科。&amp;#160;&lt;a class="footnote-backref" href="#fnref-4" title="Jump back to footnote 4 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</content><category term="人工智能"></category><category term="心理学"></category><category term="认知科学"></category></entry><entry><title>量化相关资料</title><link href="/liang-hua-xiang-guan-zi-liao.html" rel="alternate"></link><published>2016-09-18T00:00:00+08:00</published><updated>2016-09-18T00:00:00+08:00</updated><author><name>Kane</name></author><id>tag:None,2016-09-18:/liang-hua-xiang-guan-zi-liao.html</id><summary type="html">&lt;h2&gt;Online books&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href="https://www.otexts.org/fpp"&gt;Forecasting: principles and practice&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
@@ -51,6 +191,7 @@
 &lt;li&gt;Stanford公开课：&lt;a href="http://web.stanford.edu/class/cs246/handouts.html"&gt;Mining Massive Data Sets&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Berkeley cs: &lt;a href="http://www.cs.berkeley.edu/~jordan/courses/260-spring10/"&gt;Bayesian Modeling and Inference&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Stanford &lt;a href="http://cs231n.stanford.edu/"&gt;CS231n: Convolutional Neural Networks for Visual Recognition&lt;/a&gt;,&lt;a href="http://cs231n.github.io/"&gt;Notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Stanford &lt;a href="http://web.stanford.edu/class/cs224n/"&gt;CS224n: Natural Language Processing with Deep Learning&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;课程：&lt;a href="http://www.cs.toronto.edu/~rgrosse/csc321/calendar.html"&gt;Introduction to Neural Networks&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.cs.haifa.ac.il/~rita/uml_course/course_contents.html"&gt;Unsupervised Learning&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://varianceexplained.org/RData/"&gt;Rdata&lt;/a&gt;&lt;/li&gt;
@@ -59,13 +200,13 @@
 &lt;ol&gt;
 &lt;li&gt;网站：&lt;a href="https://www.52ml.net/"&gt;我爱机器学习&lt;/a&gt;，&lt;a href="http://www.52nlp.cn/"&gt;我爱自然语言处理&lt;/a&gt;,&lt;a href="http://www.52cs.org/"&gt;我爱计算机&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://playground.tensorflow.org/"&gt;Tensorflow playground&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;基于遗传算法设计NN的&lt;a href="http://www.otoro.net/ml/neat-playground"&gt;demo&lt;/a&gt;,而且可以有不同的activation functions,更多内容见: &lt;a href="http://www.otoro.net/ml/"&gt;http://www.otoro.net/ml/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://deeplearning.net/"&gt;Deep learning&lt;/a&gt;, &lt;a href="http://deeplearning.net/tutorial/contents.html"&gt;tutorials …&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;h2&gt;课程&lt;/h2&gt;
+&lt;li&gt;基于遗传算法设计NN的&lt;a href="http://www.otoro.net/ml/neat-playground"&gt;demo&lt;/a&gt;,而且可以有不同的activation functions,更多内容见 …&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;h2&gt;课程&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href="http://blog.coursegraph.com/%E5%85%AC%E5%BC%80%E8%AF%BE%E5%8F%AF%E4%B8%8B%E8%BD%BD%E8%B5%84%E6%BA%90%E6%B1%87%E6%80%BB"&gt;公开课资源&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Stanford公开课：&lt;a href="http://web.stanford.edu/class/cs246/handouts.html"&gt;Mining Massive Data Sets&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Berkeley cs: &lt;a href="http://www.cs.berkeley.edu/~jordan/courses/260-spring10/"&gt;Bayesian Modeling and Inference&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Stanford &lt;a href="http://cs231n.stanford.edu/"&gt;CS231n: Convolutional Neural Networks for Visual Recognition&lt;/a&gt;,&lt;a href="http://cs231n.github.io/"&gt;Notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Stanford &lt;a href="http://web.stanford.edu/class/cs224n/"&gt;CS224n: Natural Language Processing with Deep Learning&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;课程：&lt;a href="http://www.cs.toronto.edu/~rgrosse/csc321/calendar.html"&gt;Introduction to Neural Networks&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.cs.haifa.ac.il/~rita/uml_course/course_contents.html"&gt;Unsupervised Learning&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://varianceexplained.org/RData/"&gt;Rdata&lt;/a&gt;&lt;/li&gt;
